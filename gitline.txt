@@ -1,0 +1,63 @@
+cd D:\Coding\GUILD
+
+git init
+
+git remote add origin https://github.com/Sabingautammm/GUILD.git
+
+git branch -M main
+
+git add .
+
+git config --global user.name "Sabin Gautam"
+git config --global user.email "sabin147369@gmail.com"
+git commit -m "Initial commit"
+
+git push -u origin main
+
+git pull origin main --allow-unrelated-histories
+
+1. Create a new branch
+git checkout -b develop
+
+This creates a branch named develop and switches to it.
+
+Check your branch:
+
+git branch
+
+Output:
+
+* develop
+  main
+
+The * means you're currently on develop.
+
+2. Commit your changes
+git add .
+git commit -m "Create login page"
+3. Push the new branch
+git push -u origin develop
+
+GitHub will now have:
+
+main
+develop
+4. Continue working
+
+Whenever you add a feature:
+
+git add .
+git commit -m "Add profile page"
+git push
+
+Since you already used -u the first time, future pushes are simply:
+
+git push
+5. Merge into main
+
+When you're happy with your work:
+
+git checkout main
+git pull origin main
+git merge develop
+git push origin main
