@@ -1,55 +1,154 @@
 {
   "communities": {
     "0": [
-      "backend_src_config_upload",
-      "backend_src_config_upload_limits",
-      "backend_src_config_upload_mime_types",
-      "backend_src_config_upload_path",
-      "backend_src_controllers_mediacontroller",
-      "backend_src_controllers_mediacontroller_addcomment",
-      "backend_src_controllers_mediacontroller_getgallery",
-      "backend_src_controllers_mediacontroller_getlimit",
-      "backend_src_controllers_mediacontroller_getmymedia",
-      "backend_src_controllers_mediacontroller_getpendingforadmin",
-      "backend_src_controllers_mediacontroller_media",
-      "backend_src_controllers_mediacontroller_moderatemedia",
-      "backend_src_controllers_mediacontroller_mongoose",
-      "backend_src_controllers_mediacontroller_notification",
-      "backend_src_controllers_mediacontroller_persistvalidatedfile",
-      "backend_src_controllers_mediacontroller_removeavatar",
-      "backend_src_controllers_mediacontroller_requestorigin",
-      "backend_src_controllers_mediacontroller_resubmitmedia",
-      "backend_src_controllers_mediacontroller_togglereaction",
-      "backend_src_controllers_mediacontroller_uploadavatar",
-      "backend_src_controllers_mediacontroller_uploadmedia",
-      "backend_src_middleware_ratelimiter",
-      "backend_src_middleware_ratelimiter_authlimiter",
-      "backend_src_middleware_ratelimiter_ratelimit",
-      "backend_src_middleware_ratelimiter_writelimiter",
-      "backend_src_middleware_uploadmiddleware",
-      "backend_src_middleware_uploadmiddleware_crypto",
-      "backend_src_middleware_uploadmiddleware_makefilefilter",
-      "backend_src_middleware_uploadmiddleware_memory",
-      "backend_src_middleware_uploadmiddleware_multer",
-      "backend_src_middleware_uploadmiddleware_path",
-      "backend_src_middleware_uploadmiddleware_persistvalidatedfile",
-      "backend_src_middleware_uploadmiddleware_upload",
-      "backend_src_middleware_uploadmiddleware_upload_dir_upload_url_prefix_limits_mime_types",
-      "backend_src_middleware_uploadmiddleware_validateuploadedfile",
-      "backend_src_routes_mediaroutes",
-      "backend_src_routes_mediaroutes_express",
-      "backend_src_routes_mediaroutes_getgallery_getmymedia_uploadmedia_uploadavatar_removeavatar_getpendingforadmin_moderatemedia_resubmitmedia_togglereaction_addcomment",
-      "backend_src_routes_mediaroutes_protect_requirerole_optionalauth",
-      "backend_src_routes_mediaroutes_router",
-      "backend_src_routes_mediaroutes_upload",
-      "backend_src_routes_mediaroutes_writelimiter",
-      "backend_src_utils_filevalidator",
-      "backend_src_utils_filevalidator_detectfiletype",
-      "backend_src_utils_filevalidator_matches",
-      "backend_src_utils_filevalidator_startswithascii",
-      "backend_src_utils_filevalidator_validateuploadedfile"
+      "frontend_src_app_adminpage",
+      "frontend_src_app_memberdetailspage",
+      "frontend_src_app_notificationspage",
+      "frontend_src_components_ui_skeleton_skeletonprofile",
+      "frontend_src_features_admin_activitytab",
+      "frontend_src_features_admin_activitytab_activitytab",
+      "frontend_src_features_admin_activitytab_truncate",
+      "frontend_src_features_admin_guildplayerstab",
+      "frontend_src_features_admin_guildplayerstab_games",
+      "frontend_src_features_admin_guildplayerstab_guildplayerstab",
+      "frontend_src_features_admin_guildplayerstab_status_filters",
+      "frontend_src_features_admin_guildplayerstab_statusbadge",
+      "frontend_src_features_admin_memberstab",
+      "frontend_src_features_admin_memberstab_memberstab",
+      "frontend_src_features_admin_pendingtab",
+      "frontend_src_features_admin_pendingtab_pendingtab",
+      "frontend_src_features_admin_pendingtab_type_label",
+      "frontend_src_features_admin_transfertab",
+      "frontend_src_features_admin_transfertab_transfertab",
+      "frontend_src_features_auth_services_authapi",
+      "frontend_src_features_auth_services_authapi_changepassword",
+      "frontend_src_features_auth_services_authapi_checkguilduid",
+      "frontend_src_features_auth_services_authapi_createguild",
+      "frontend_src_features_auth_services_authapi_deleteaccount",
+      "frontend_src_features_auth_services_authapi_leaderlogin",
+      "frontend_src_features_auth_services_authapi_selectgame",
+      "frontend_src_features_auth_services_authapi_submitgameidentity",
+      "frontend_src_features_auth_services_authapi_verifyleaderpassword",
+      "frontend_src_features_dashboard_data_playertypes",
+      "frontend_src_features_dashboard_data_playertypes_mock_player",
+      "frontend_src_features_dashboard_data_playertypes_role_label",
+      "frontend_src_features_members_services_memberapi",
+      "frontend_src_features_members_services_memberapi_getmemberbyid",
+      "frontend_src_features_members_services_memberapi_getmembers",
+      "frontend_src_pages_adminpage",
+      "frontend_src_pages_adminpage_adminpage",
+      "frontend_src_pages_adminpage_tabs",
+      "frontend_src_pages_guildpage",
+      "frontend_src_pages_guildpage_guildpage",
+      "frontend_src_pages_guildpage_rolechip",
+      "frontend_src_pages_memberdetailspage",
+      "frontend_src_pages_memberdetailspage_memberdetailspage",
+      "frontend_src_pages_notificationspage",
+      "frontend_src_pages_notificationspage_notificationspage",
+      "frontend_src_services_api_adminapi",
+      "frontend_src_services_api_adminapi_addplayerbygameuid",
+      "frontend_src_services_api_adminapi_claimleadership",
+      "frontend_src_services_api_adminapi_completetransfer",
+      "frontend_src_services_api_adminapi_deleteexmember",
+      "frontend_src_services_api_adminapi_getactivitylogs",
+      "frontend_src_services_api_adminapi_getexmembers",
+      "frontend_src_services_api_adminapi_getguildplayers",
+      "frontend_src_services_api_adminapi_getpendingactions",
+      "frontend_src_services_api_adminapi_getroster",
+      "frontend_src_services_api_adminapi_initiatetransfer",
+      "frontend_src_services_api_adminapi_processmemberaction",
+      "frontend_src_services_api_adminapi_promotemember",
+      "frontend_src_services_api_adminapi_removeguildplayer",
+      "frontend_src_services_api_adminapi_searchguildplayer",
+      "frontend_src_services_api_adminapi_votependingaction",
+      "frontend_src_services_api_authapi",
+      "frontend_src_services_api_authapi_checkguilduid",
+      "frontend_src_services_api_authapi_completeonboarding",
+      "frontend_src_services_api_authapi_createguild",
+      "frontend_src_services_api_authapi_getcurrentuser",
+      "frontend_src_services_api_authapi_googlelogin",
+      "frontend_src_services_api_authapi_leaderlogin",
+      "frontend_src_services_api_authapi_logout",
+      "frontend_src_services_api_authapi_selectgame",
+      "frontend_src_services_api_authapi_submitgameidentity",
+      "frontend_src_services_api_authapi_verifyleaderpassword",
+      "frontend_src_services_api_client",
+      "frontend_src_services_api_client_addbotprotectionfields",
+      "frontend_src_services_api_client_apierror",
+      "frontend_src_services_api_client_apierror_constructor",
+      "frontend_src_services_api_client_apifetch",
+      "frontend_src_services_api_client_client_fingerprint",
+      "frontend_src_services_api_client_defaultmessageforstatus",
+      "frontend_src_services_api_client_generateclientfingerprint",
+      "frontend_src_services_api_client_page_load_time",
+      "frontend_src_services_api_ffapi",
+      "frontend_src_services_api_ffapi_getplayerbrstats",
+      "frontend_src_services_api_ffapi_getplayercsstats",
+      "frontend_src_services_api_ffapi_getplayerprofile",
+      "frontend_src_services_api_guildapi",
+      "frontend_src_services_api_guildapi_applytoguild",
+      "frontend_src_services_api_guildapi_disbandguild",
+      "frontend_src_services_api_guildapi_getguildprofile",
+      "frontend_src_services_api_guildapi_getprivateguildview",
+      "frontend_src_services_api_guildapi_leaveguild",
+      "frontend_src_services_api_guildapi_updateguild",
+      "frontend_src_services_api_notificationapi",
+      "frontend_src_services_api_notificationapi_getnotifications",
+      "frontend_src_services_api_notificationapi_markallread",
+      "frontend_src_services_api_notificationapi_markread",
+      "frontend_src_utils_playername",
+      "frontend_src_utils_playername_playername"
     ],
     "1": [
+      "backend_package_dependencies",
+      "backend_package_dependencies_bcrypt",
+      "backend_package_dependencies_cookie_parser",
+      "backend_package_dependencies_cors",
+      "backend_package_dependencies_dotenv",
+      "backend_package_dependencies_express",
+      "backend_package_dependencies_express_rate_limit",
+      "backend_package_dependencies_google_auth_library",
+      "backend_package_dependencies_helmet",
+      "backend_package_dependencies_jsonwebtoken",
+      "backend_package_dependencies_mongoose",
+      "backend_package_dependencies_multer",
+      "backend_package_dependencies_protobufjs",
+      "backend_package_dependencies_socket_io",
+      "backend_package_json_cors",
+      "backend_package_json_dotenv",
+      "backend_package_json_express",
+      "backend_package_json_protobufjs",
+      "bcrypt",
+      "cookie_parser",
+      "express_rate_limit",
+      "free_fire_api_package",
+      "free_fire_api_package_dependencies",
+      "free_fire_api_package_dependencies_cors",
+      "free_fire_api_package_dependencies_dotenv",
+      "free_fire_api_package_dependencies_express",
+      "free_fire_api_package_dependencies_nodemon",
+      "free_fire_api_package_dependencies_protobufjs",
+      "free_fire_api_package_dependencies_protobufjs_cli",
+      "free_fire_api_package_description",
+      "free_fire_api_package_json_cors",
+      "free_fire_api_package_json_express",
+      "free_fire_api_package_json_nodemon",
+      "free_fire_api_package_main",
+      "free_fire_api_package_name",
+      "free_fire_api_package_scripts",
+      "free_fire_api_package_scripts_build_proto",
+      "free_fire_api_package_scripts_dev",
+      "free_fire_api_package_scripts_start",
+      "free_fire_api_package_version",
+      "google_auth_library",
+      "helmet",
+      "jsonwebtoken",
+      "mongoose",
+      "multer",
+      "protobufjs_cli",
+      "socket_io"
+    ],
+    "2": [
       "backend_src_controllers_admincontroller",
       "backend_src_controllers_admincontroller_addplayerbygameuid",
       "backend_src_controllers_admincontroller_admin_roles",
@@ -90,7 +189,47 @@
       "backend_src_routes_adminroutes_protect_requirerole",
       "backend_src_routes_adminroutes_router"
     ],
-    "2": [
+    "3": [
+      "frontend_src_app",
+      "frontend_src_app_app",
+      "frontend_src_app_apploadingskeleton",
+      "frontend_src_app_guildpage",
+      "frontend_src_app_leaderboardpage",
+      "frontend_src_app_memberspage",
+      "frontend_src_app_notfoundpage",
+      "frontend_src_app_reelpage",
+      "frontend_src_app_routefallback",
+      "frontend_src_components_layout_protectedroutes",
+      "frontend_src_components_layout_protectedroutes_protectedroutes",
+      "frontend_src_components_ui_skeleton",
+      "frontend_src_components_ui_skeleton_fullpageskeleton",
+      "frontend_src_components_ui_skeleton_pageheaderskeleton",
+      "frontend_src_components_ui_skeleton_skeleton",
+      "frontend_src_components_ui_skeleton_skeletonbutton",
+      "frontend_src_components_ui_skeleton_skeletoncard",
+      "frontend_src_components_ui_skeleton_skeletonguild",
+      "frontend_src_components_ui_skeleton_skeletoninput",
+      "frontend_src_components_ui_skeleton_skeletonleaderboard",
+      "frontend_src_components_ui_skeleton_skeletonlist",
+      "frontend_src_main",
+      "frontend_src_pages_leaderboardpage",
+      "frontend_src_pages_leaderboardpage_avatarwithfallback",
+      "frontend_src_pages_leaderboardpage_fmt",
+      "frontend_src_pages_leaderboardpage_leaderboardpage",
+      "frontend_src_pages_leaderboardpage_modestat",
+      "frontend_src_pages_leaderboardpage_playermoderow",
+      "frontend_src_pages_leaderboardpage_rankstylefor",
+      "frontend_src_pages_leaderboardpage_scorestat",
+      "frontend_src_pages_leaderboardpage_stat_modes",
+      "frontend_src_pages_memberspage",
+      "frontend_src_pages_memberspage_memberspage",
+      "frontend_src_pages_reelpage",
+      "frontend_src_pages_reelpage_reelpage",
+      "frontend_src_services_api_leaderboardapi",
+      "frontend_src_services_api_leaderboardapi_getguildleaderboard",
+      "frontend_src_services_api_leaderboardapi_getplayerleaderboard"
+    ],
+    "4": [
       "framer_motion",
       "frontend_package",
       "frontend_package_dependencies",
@@ -127,7 +266,42 @@
       "vite",
       "vitejs_plugin_react"
     ],
-    "3": [
+    "5": [
+      "backend_src_config_db",
+      "backend_src_config_db_connectdb",
+      "backend_src_config_db_mongoose",
+      "backend_src_middleware_errormiddleware",
+      "backend_src_middleware_errormiddleware_errorhandler",
+      "backend_src_middleware_errormiddleware_notfound",
+      "backend_src_models_user",
+      "backend_src_models_user_bcrypt",
+      "backend_src_models_user_mongoose",
+      "backend_src_models_user_userschema",
+      "backend_src_server",
+      "backend_src_server_allowedorigins",
+      "backend_src_server_app",
+      "backend_src_server_connectdb",
+      "backend_src_server_cookieparser",
+      "backend_src_server_cors",
+      "backend_src_server_dotenv",
+      "backend_src_server_express",
+      "backend_src_server_helmet",
+      "backend_src_server_http",
+      "backend_src_server_initializesocket",
+      "backend_src_server_notfound_errorhandler",
+      "backend_src_server_origin",
+      "backend_src_server_path",
+      "backend_src_server_server",
+      "backend_src_server_upload_dir_upload_url_prefix",
+      "backend_src_services_socket",
+      "backend_src_services_socket_getio",
+      "backend_src_services_socket_initializesocket",
+      "backend_src_services_socket_jwt",
+      "backend_src_services_socket_server",
+      "backend_src_services_socket_user",
+      "backend_src_services_socket_usersockets"
+    ],
+    "6": [
       "exception",
       "free_fire_api_api_account",
       "free_fire_api_api_account_get_garena_token",
@@ -160,7 +334,7 @@
       "message",
       "route"
     ],
-    "4": [
+    "7": [
       "backend_src_controllers_guildcontroller",
       "backend_src_controllers_guildcontroller_applytoguild",
       "backend_src_controllers_guildcontroller_changelog",
@@ -192,78 +366,41 @@
       "backend_src_routes_guildroutes_protect_requirerole",
       "backend_src_routes_guildroutes_router"
     ],
-    "5": [
-      "free_fire_api_api_ff_ingame",
-      "free_fire_api_api_ff_ingame_addrates",
-      "free_fire_api_api_ff_ingame_authheaders",
-      "free_fire_api_api_ff_ingame_cacheget",
-      "free_fire_api_api_ff_ingame_cacheset",
-      "free_fire_api_api_ff_ingame_clan_activity_type",
-      "free_fire_api_api_ff_ingame_encodeproto_decodeproto_postexpectcontinue",
-      "free_fire_api_api_ff_ingame_enrichplayers",
-      "free_fire_api_api_ff_ingame_getclanmainpageinfo",
-      "free_fire_api_api_ff_ingame_getclanofficers",
-      "free_fire_api_api_ff_ingame_getguildmembers",
-      "free_fire_api_api_ff_ingame_getguildmemberuids",
-      "free_fire_api_api_ff_ingame_getplayergallery",
-      "free_fire_api_api_ff_ingame_getplayerprofilecached",
-      "free_fire_api_api_ff_ingame_getplayerstats",
-      "free_fire_api_api_ff_ingame_getplayerwishlist",
-      "free_fire_api_api_ff_ingame_guildcache",
-      "free_fire_api_api_ff_ingame_headers",
-      "free_fire_api_api_ff_ingame_mapbr_mapcs",
-      "free_fire_api_api_ff_ingame_maplimit",
-      "free_fire_api_api_ff_ingame_playercache",
-      "free_fire_api_api_ff_ingame_playerpersonalshow_playerstats_playercsstats_searchaccountbyname_setplayergalleryshowinfo_clanmainpageinforequest_clanmainpageinforesponse_fuzzysearchclanbynamerequest_fuzzysearchclanbynameresponse",
-      "free_fire_api_api_ff_ingame_postproto",
-      "free_fire_api_api_ff_ingame_rationale_172",
-      "free_fire_api_api_ff_ingame_releaseversion_debug_request_timeout_ms",
-      "free_fire_api_api_ff_ingame_scanfield9strings",
-      "free_fire_api_api_ff_ingame_setplayergalleryshowinfo",
-      "free_fire_api_api_ff_ingame_walkwire",
-      "free_fire_api_api_ff_ingame_wishlistcache"
+    "8": [
+      "frontend_src_app_gallerypage",
+      "frontend_src_components_ui_mediacard",
+      "frontend_src_components_ui_mediacard_mediacard",
+      "frontend_src_components_ui_skeleton_skeletonmediagrid",
+      "frontend_src_features_admin_mediatab",
+      "frontend_src_features_admin_mediatab_mediatab",
+      "frontend_src_pages_gallerypage",
+      "frontend_src_pages_gallerypage_gallerypage",
+      "frontend_src_pages_gallerypage_image_extensions",
+      "frontend_src_pages_gallerypage_image_mimes",
+      "frontend_src_pages_gallerypage_validatemediafile",
+      "frontend_src_pages_gallerypage_video_extensions",
+      "frontend_src_pages_gallerypage_video_mimes",
+      "frontend_src_pages_homepage_homepage",
+      "frontend_src_services_api_client_apiupload",
+      "frontend_src_services_api_mediaapi",
+      "frontend_src_services_api_mediaapi_addcomment",
+      "frontend_src_services_api_mediaapi_getgallery",
+      "frontend_src_services_api_mediaapi_getmymedia",
+      "frontend_src_services_api_mediaapi_getpendingmedia",
+      "frontend_src_services_api_mediaapi_moderatemedia",
+      "frontend_src_services_api_mediaapi_removeavatar",
+      "frontend_src_services_api_mediaapi_resubmitmedia",
+      "frontend_src_services_api_mediaapi_togglereaction",
+      "frontend_src_services_api_mediaapi_uploadavatarfile",
+      "frontend_src_services_api_mediaapi_uploadmediafile"
     ],
-    "6": [
-      "frontend_src_features_auth_context_authcontext_authprovider",
-      "frontend_src_features_auth_services_authapi",
-      "frontend_src_features_auth_services_authapi_changepassword",
-      "frontend_src_features_auth_services_authapi_checkguilduid",
-      "frontend_src_features_auth_services_authapi_createguild",
-      "frontend_src_features_auth_services_authapi_deleteaccount",
-      "frontend_src_features_auth_services_authapi_getcurrentuser",
-      "frontend_src_features_auth_services_authapi_leaderlogin",
-      "frontend_src_features_auth_services_authapi_logout",
-      "frontend_src_features_auth_services_authapi_selectgame",
-      "frontend_src_features_auth_services_authapi_submitgameidentity",
-      "frontend_src_features_auth_services_authapi_verifyleaderpassword",
-      "frontend_src_services_api_authapi",
-      "frontend_src_services_api_authapi_checkguilduid",
-      "frontend_src_services_api_authapi_completeonboarding",
-      "frontend_src_services_api_authapi_createguild",
-      "frontend_src_services_api_authapi_getcurrentuser",
-      "frontend_src_services_api_authapi_googlelogin",
-      "frontend_src_services_api_authapi_leaderlogin",
-      "frontend_src_services_api_authapi_logout",
-      "frontend_src_services_api_authapi_selectgame",
-      "frontend_src_services_api_authapi_submitgameidentity",
-      "frontend_src_services_api_authapi_verifyleaderpassword",
-      "frontend_src_services_api_client_apifetch",
-      "frontend_src_services_api_ffapi",
-      "frontend_src_services_api_ffapi_getplayerbrstats",
-      "frontend_src_services_api_ffapi_getplayercsstats",
-      "frontend_src_services_api_ffapi_getplayerprofile"
-    ],
-    "7": [
+    "9": [
       "free_fire_api_api_ff_account",
       "free_fire_api_api_ff_account_encodeproto_decodeproto_postexpectcontinue_postform_safejson",
       "free_fire_api_api_ff_account_garena_token_url_major_login_url_client_secret_client_id_releaseversion_debug",
       "free_fire_api_api_ff_account_getgarenatoken",
       "free_fire_api_api_ff_account_majorlogin",
-      "free_fire_api_api_ff_ingame_searchaccountbykeyword",
-      "free_fire_api_cli",
-      "free_fire_api_cli_accounts",
-      "free_fire_api_cli_getgarenatoken_getmajorlogin",
-      "free_fire_api_cli_getplayerpersonalshow_getplayerstats_searchaccountbykeyword",
+      "free_fire_api_api_ff_ingame_searchclanbyname",
       "free_fire_api_configuration_config",
       "free_fire_api_configuration_config_account_keys",
       "free_fire_api_configuration_config_accounts",
@@ -275,43 +412,118 @@
       "free_fire_api_configuration_config_main_key",
       "free_fire_api_configuration_config_region_account_map",
       "free_fire_api_configuration_config_requireenv",
+      "free_fire_api_proto_compiled",
       "free_fire_api_test_guild",
       "free_fire_api_test_guild_accounts",
       "free_fire_api_test_guild_ffaccount",
       "free_fire_api_test_guild_ffingame",
+      "free_fire_api_test_guild_main",
       "free_fire_api_utilities_ff_utils_postform",
       "free_fire_api_utilities_ff_utils_safejson"
     ],
-    "8": [
-      "frontend_src_app",
-      "frontend_src_app_app",
-      "frontend_src_app_apploadingskeleton",
-      "frontend_src_app_approutes",
-      "frontend_src_app_guildpage",
-      "frontend_src_app_memberdetailspage",
-      "frontend_src_app_notfoundpage",
-      "frontend_src_app_routefallback",
-      "frontend_src_components_layout_navbar_navbar",
-      "frontend_src_components_layout_protectedroutes",
-      "frontend_src_components_layout_protectedroutes_protectedroutes",
-      "frontend_src_components_ui_skeleton",
-      "frontend_src_components_ui_skeleton_fullpageskeleton",
-      "frontend_src_components_ui_skeleton_pageheaderskeleton",
-      "frontend_src_components_ui_skeleton_skeleton",
-      "frontend_src_components_ui_skeleton_skeletonbutton",
-      "frontend_src_components_ui_skeleton_skeletoncard",
-      "frontend_src_components_ui_skeleton_skeletonguild",
-      "frontend_src_components_ui_skeleton_skeletoninput",
-      "frontend_src_components_ui_skeleton_skeletonleaderboard",
-      "frontend_src_components_ui_skeleton_skeletonprofile",
-      "frontend_src_features_members_services_memberapi",
-      "frontend_src_features_members_services_memberapi_getmemberbyid",
-      "frontend_src_features_members_services_memberapi_getmembers",
-      "frontend_src_main",
-      "frontend_src_pages_memberdetailspage",
-      "frontend_src_pages_memberdetailspage_memberdetailspage"
+    "10": [
+      "free_fire_api_api_ff_ingame",
+      "free_fire_api_api_ff_ingame_cacheget",
+      "free_fire_api_api_ff_ingame_cacheset",
+      "free_fire_api_api_ff_ingame_clan_activity_type",
+      "free_fire_api_api_ff_ingame_encodeproto_decodeproto_postexpectcontinue",
+      "free_fire_api_api_ff_ingame_enrichplayers",
+      "free_fire_api_api_ff_ingame_getclanmainpageinfo",
+      "free_fire_api_api_ff_ingame_getclanofficers",
+      "free_fire_api_api_ff_ingame_getguildmembers",
+      "free_fire_api_api_ff_ingame_getguildmemberuids",
+      "free_fire_api_api_ff_ingame_getplayergallery",
+      "free_fire_api_api_ff_ingame_getplayerprofilecached",
+      "free_fire_api_api_ff_ingame_getplayerwishlist",
+      "free_fire_api_api_ff_ingame_guildcache",
+      "free_fire_api_api_ff_ingame_headers",
+      "free_fire_api_api_ff_ingame_mapbr_mapcs",
+      "free_fire_api_api_ff_ingame_maplimit",
+      "free_fire_api_api_ff_ingame_playercache",
+      "free_fire_api_api_ff_ingame_playerpersonalshow_playerstats_playercsstats_searchaccountbyname_setplayergalleryshowinfo_clanmainpageinforequest_clanmainpageinforesponse_fuzzysearchclanbynamerequest_fuzzysearchclanbynameresponse",
+      "free_fire_api_api_ff_ingame_rationale_172",
+      "free_fire_api_api_ff_ingame_releaseversion_debug_request_timeout_ms",
+      "free_fire_api_api_ff_ingame_scanfield9strings",
+      "free_fire_api_api_ff_ingame_walkwire",
+      "free_fire_api_api_ff_ingame_wishlistcache"
     ],
-    "9": [
+    "11": [
+      "frontend_src_app_approutes",
+      "frontend_src_components_layout_bottomnavbar",
+      "frontend_src_components_layout_bottomnavbar_bottomnavbar",
+      "frontend_src_components_layout_bottomnavbar_navitems",
+      "frontend_src_components_layout_desktopnavbar",
+      "frontend_src_components_layout_desktopnavbar_desktopnavbar",
+      "frontend_src_components_layout_desktopnavbar_navitems",
+      "frontend_src_components_layout_desktopnavbar_useunreadcount",
+      "frontend_src_components_layout_mobileheader",
+      "frontend_src_components_layout_mobileheader_mobileheader",
+      "frontend_src_components_layout_navbar",
+      "frontend_src_components_layout_navbar_navbar",
+      "frontend_src_components_ui_avatar",
+      "frontend_src_components_ui_avatar_avatar",
+      "frontend_src_features_auth_context_authcontext",
+      "frontend_src_features_auth_context_authcontext_authcontext",
+      "frontend_src_features_auth_context_authcontext_authprovider",
+      "frontend_src_features_auth_context_authcontext_useauth",
+      "frontend_src_features_auth_hooks_uselogin",
+      "frontend_src_features_auth_hooks_uselogin_uselogin",
+      "frontend_src_features_auth_services_authapi_getcurrentuser",
+      "frontend_src_features_auth_services_authapi_logout",
+      "frontend_src_services_api_notificationapi_getunreadcount",
+      "ref_react"
+    ],
+    "12": [
+      "backend_package",
+      "backend_package_author",
+      "backend_package_bugs",
+      "backend_package_bugs_url",
+      "backend_package_description",
+      "backend_package_devdependencies",
+      "backend_package_devdependencies_nodemon",
+      "backend_package_engines",
+      "backend_package_engines_node",
+      "backend_package_homepage",
+      "backend_package_json_nodemon",
+      "backend_package_license",
+      "backend_package_main",
+      "backend_package_name",
+      "backend_package_repository",
+      "backend_package_repository_type",
+      "backend_package_repository_url",
+      "backend_package_scripts",
+      "backend_package_scripts_dev",
+      "backend_package_scripts_start",
+      "backend_package_scripts_test",
+      "backend_package_type",
+      "backend_package_version"
+    ],
+    "13": [
+      "backend_src_controllers_mediacontroller",
+      "backend_src_controllers_mediacontroller_addcomment",
+      "backend_src_controllers_mediacontroller_getgallery",
+      "backend_src_controllers_mediacontroller_getlimit",
+      "backend_src_controllers_mediacontroller_getmymedia",
+      "backend_src_controllers_mediacontroller_getpendingforadmin",
+      "backend_src_controllers_mediacontroller_media",
+      "backend_src_controllers_mediacontroller_moderatemedia",
+      "backend_src_controllers_mediacontroller_mongoose",
+      "backend_src_controllers_mediacontroller_notification",
+      "backend_src_controllers_mediacontroller_persistvalidatedfile",
+      "backend_src_controllers_mediacontroller_removeavatar",
+      "backend_src_controllers_mediacontroller_togglereaction",
+      "backend_src_models_playerprofile",
+      "backend_src_models_playerprofile_mongoose",
+      "backend_src_models_playerprofile_playerprofileschema",
+      "backend_src_routes_mediaroutes",
+      "backend_src_routes_mediaroutes_express",
+      "backend_src_routes_mediaroutes_getgallery_getmymedia_uploadmedia_uploadavatar_removeavatar_getpendingforadmin_moderatemedia_resubmitmedia_togglereaction_addcomment",
+      "backend_src_routes_mediaroutes_protect_requirerole_optionalauth",
+      "backend_src_routes_mediaroutes_router",
+      "backend_src_routes_mediaroutes_upload",
+      "backend_src_routes_mediaroutes_writelimiter"
+    ],
+    "14": [
       "free_fire_api_server",
       "free_fire_api_server_accounts_rate_limit_max_rate_limit_window_ms",
       "free_fire_api_server_apierror",
@@ -334,42 +546,35 @@
       "free_fire_api_server_send",
       "free_fire_api_server_server",
       "free_fire_api_server_shutdown",
-      "free_fire_api_server_wrap",
-      "free_fire_api_utilities_ff_utils_apierror",
-      "free_fire_api_utilities_ff_utils_apierror_constructor"
+      "free_fire_api_server_wrap"
     ],
-    "10": [
-      "backend_package_dependencies",
-      "backend_package_dependencies_bcrypt",
-      "backend_package_dependencies_cookie_parser",
-      "backend_package_dependencies_cors",
-      "backend_package_dependencies_express",
-      "backend_package_dependencies_express_rate_limit",
-      "backend_package_dependencies_google_auth_library",
-      "backend_package_dependencies_helmet",
-      "backend_package_dependencies_jsonwebtoken",
-      "backend_package_dependencies_mongoose",
-      "backend_package_dependencies_multer",
-      "backend_package_dependencies_socket_io",
-      "backend_package_json_cors",
-      "backend_package_json_express",
-      "bcrypt",
-      "cookie_parser",
-      "express_rate_limit",
-      "google_auth_library",
-      "helmet",
-      "jsonwebtoken",
-      "mongoose",
-      "multer",
-      "socket_io"
+    "15": [
+      "backend_src_controllers_authcontroller",
+      "backend_src_controllers_authcontroller_admin_roles",
+      "backend_src_controllers_authcontroller_bcrypt",
+      "backend_src_controllers_authcontroller_changelog",
+      "backend_src_controllers_authcontroller_detectguildstatus",
+      "backend_src_controllers_authcontroller_dummy_bcrypt_hash",
+      "backend_src_controllers_authcontroller_emitplayerstatsupdate_emitplayerprofileupdate",
+      "backend_src_controllers_authcontroller_games",
+      "backend_src_controllers_authcontroller_generatetoken",
+      "backend_src_controllers_authcontroller_googleauth",
+      "backend_src_controllers_authcontroller_googleclient",
+      "backend_src_controllers_authcontroller_guild",
+      "backend_src_controllers_authcontroller_guildplayer",
+      "backend_src_controllers_authcontroller_jwt",
+      "backend_src_controllers_authcontroller_membership",
+      "backend_src_controllers_authcontroller_notification",
+      "backend_src_controllers_authcontroller_oauth2client",
+      "backend_src_controllers_authcontroller_pendingaction",
+      "backend_src_controllers_authcontroller_rationale_149",
+      "backend_src_controllers_authcontroller_submitgameidentity",
+      "backend_src_controllers_authcontroller_user"
     ],
-    "11": [
+    "16": [
       "frontend_src_app_enteruidregionpage",
       "frontend_src_app_onboardingpage",
       "frontend_src_app_toastdemopage",
-      "frontend_src_components_toast_toastprovider",
-      "frontend_src_components_toast_toastprovider_toastcontext",
-      "frontend_src_components_toast_toastprovider_toastprovider",
       "frontend_src_components_toast_toastprovider_usetoast",
       "frontend_src_components_toast_usetoast",
       "frontend_src_features_auth_services_authapi_completeonboarding",
@@ -388,143 +593,26 @@
       "frontend_src_pages_toastdemo",
       "frontend_src_pages_toastdemo_toastdemopage"
     ],
-    "12": [
-      "frontend_src_app_gallerypage",
-      "frontend_src_app_reelpage",
-      "frontend_src_components_ui_mediacard",
-      "frontend_src_components_ui_mediacard_mediacard",
-      "frontend_src_pages_gallerypage",
-      "frontend_src_pages_gallerypage_gallerypage",
-      "frontend_src_pages_gallerypage_image_extensions",
-      "frontend_src_pages_gallerypage_image_mimes",
-      "frontend_src_pages_gallerypage_validatemediafile",
-      "frontend_src_pages_gallerypage_video_extensions",
-      "frontend_src_pages_gallerypage_video_mimes",
-      "frontend_src_pages_reelpage",
-      "frontend_src_pages_reelpage_reelpage",
-      "frontend_src_services_api_client_apiupload",
-      "frontend_src_services_api_mediaapi",
-      "frontend_src_services_api_mediaapi_addcomment",
-      "frontend_src_services_api_mediaapi_getgallery",
-      "frontend_src_services_api_mediaapi_getmymedia",
-      "frontend_src_services_api_mediaapi_removeavatar",
-      "frontend_src_services_api_mediaapi_resubmitmedia",
-      "frontend_src_services_api_mediaapi_togglereaction",
-      "frontend_src_services_api_mediaapi_uploadavatarfile",
-      "frontend_src_services_api_mediaapi_uploadmediafile"
-    ],
-    "13": [
-      "backend_src_config_db",
-      "backend_src_config_db_connectdb",
-      "backend_src_config_db_mongoose",
-      "backend_src_middleware_errormiddleware",
-      "backend_src_middleware_errormiddleware_errorhandler",
-      "backend_src_middleware_errormiddleware_notfound",
-      "backend_src_server",
-      "backend_src_server_allowedorigins",
-      "backend_src_server_app",
-      "backend_src_server_connectdb",
-      "backend_src_server_cookieparser",
-      "backend_src_server_cors",
-      "backend_src_server_dotenv",
-      "backend_src_server_express",
-      "backend_src_server_helmet",
-      "backend_src_server_http",
-      "backend_src_server_initializesocket",
-      "backend_src_server_notfound_errorhandler",
-      "backend_src_server_origin",
-      "backend_src_server_path",
-      "backend_src_server_server",
-      "backend_src_server_upload_dir_upload_url_prefix"
-    ],
-    "14": [
-      "backend_src_controllers_authcontroller",
-      "backend_src_controllers_authcontroller_admin_roles",
-      "backend_src_controllers_authcontroller_bcrypt",
-      "backend_src_controllers_authcontroller_changelog",
-      "backend_src_controllers_authcontroller_createguild",
-      "backend_src_controllers_authcontroller_dummy_bcrypt_hash",
-      "backend_src_controllers_authcontroller_emitplayerstatsupdate_emitplayerprofileupdate",
-      "backend_src_controllers_authcontroller_games",
-      "backend_src_controllers_authcontroller_generatetoken",
-      "backend_src_controllers_authcontroller_getme",
-      "backend_src_controllers_authcontroller_googleauth",
-      "backend_src_controllers_authcontroller_googleclient",
-      "backend_src_controllers_authcontroller_guild",
-      "backend_src_controllers_authcontroller_guildplayer",
-      "backend_src_controllers_authcontroller_jwt",
-      "backend_src_controllers_authcontroller_membership",
-      "backend_src_controllers_authcontroller_notification",
-      "backend_src_controllers_authcontroller_oauth2client",
-      "backend_src_controllers_authcontroller_pendingaction",
-      "backend_src_controllers_authcontroller_rationale_149",
-      "backend_src_controllers_authcontroller_serializeuser",
-      "backend_src_controllers_authcontroller_user"
-    ],
-    "15": [
-      "backend_src_controllers_authcontroller_completeonboarding",
-      "backend_src_controllers_authcontroller_detectguildstatus",
-      "backend_src_controllers_authcontroller_submitgameidentity",
-      "backend_src_controllers_authcontroller_submituidregion",
-      "backend_src_controllers_playercontroller",
-      "backend_src_controllers_playercontroller_emitplayerstatsupdate_emitplayerprofileupdate",
-      "backend_src_controllers_playercontroller_getmyprofile",
-      "backend_src_controllers_playercontroller_guild",
-      "backend_src_controllers_playercontroller_membership",
-      "backend_src_controllers_playercontroller_playerprofile",
-      "backend_src_controllers_playercontroller_syncprofilefrommembership",
-      "backend_src_controllers_playercontroller_updatemyprofile",
-      "backend_src_controllers_playercontroller_validateseasonstats",
-      "backend_src_models_guild",
-      "backend_src_models_guild_guildschema",
-      "backend_src_models_guild_mongoose",
-      "backend_src_models_playerprofile",
-      "backend_src_models_playerprofile_mongoose",
-      "backend_src_models_playerprofile_playerprofileschema",
-      "backend_src_services_socket_emitplayerprofileupdate",
-      "backend_src_services_socket_emitplayerstatsupdate"
-    ],
-    "16": [
-      "frontend_src_app_adminpage",
-      "frontend_src_components_ui_skeleton_skeletonmediagrid",
-      "frontend_src_features_admin_activitytab",
-      "frontend_src_features_admin_activitytab_activitytab",
-      "frontend_src_features_admin_activitytab_truncate",
-      "frontend_src_features_admin_mediatab",
-      "frontend_src_features_admin_mediatab_mediatab",
-      "frontend_src_features_admin_pendingtab",
-      "frontend_src_features_admin_pendingtab_pendingtab",
-      "frontend_src_features_admin_pendingtab_type_label",
-      "frontend_src_pages_adminpage",
-      "frontend_src_pages_adminpage_adminpage",
-      "frontend_src_pages_adminpage_tabs",
-      "frontend_src_pages_guildpage_rolechip",
-      "frontend_src_services_api_adminapi_getactivitylogs",
-      "frontend_src_services_api_adminapi_getpendingactions",
-      "frontend_src_services_api_adminapi_votependingaction",
-      "frontend_src_services_api_mediaapi_getpendingmedia",
-      "frontend_src_services_api_mediaapi_moderatemedia",
-      "frontend_src_utils_playername",
-      "frontend_src_utils_playername_playername"
-    ],
     "17": [
-      "frontend_src_app_leaderboardpage",
-      "frontend_src_app_memberspage",
-      "frontend_src_components_ui_skeleton_skeletonlist",
-      "frontend_src_pages_leaderboardpage",
-      "frontend_src_pages_leaderboardpage_avatarwithfallback",
-      "frontend_src_pages_leaderboardpage_fmt",
-      "frontend_src_pages_leaderboardpage_leaderboardpage",
-      "frontend_src_pages_leaderboardpage_modestat",
-      "frontend_src_pages_leaderboardpage_playermoderow",
-      "frontend_src_pages_leaderboardpage_rankstylefor",
-      "frontend_src_pages_leaderboardpage_scorestat",
-      "frontend_src_pages_leaderboardpage_stat_modes",
-      "frontend_src_pages_memberspage",
-      "frontend_src_pages_memberspage_memberspage",
-      "frontend_src_services_api_leaderboardapi",
-      "frontend_src_services_api_leaderboardapi_getguildleaderboard",
-      "frontend_src_services_api_leaderboardapi_getplayerleaderboard"
+      "backend_src_controllers_notificationcontroller",
+      "backend_src_controllers_notificationcontroller_getnotifications",
+      "backend_src_controllers_notificationcontroller_getunreadcount",
+      "backend_src_controllers_notificationcontroller_markread",
+      "backend_src_controllers_notificationcontroller_notification",
+      "backend_src_middleware_authmiddleware",
+      "backend_src_middleware_authmiddleware_jwt",
+      "backend_src_middleware_authmiddleware_membership",
+      "backend_src_middleware_authmiddleware_protect",
+      "backend_src_middleware_authmiddleware_requirerole",
+      "backend_src_middleware_authmiddleware_user",
+      "backend_src_models_notification",
+      "backend_src_models_notification_mongoose",
+      "backend_src_models_notification_notificationschema",
+      "backend_src_routes_notificationroutes",
+      "backend_src_routes_notificationroutes_express",
+      "backend_src_routes_notificationroutes_getnotifications_getunreadcount_markread",
+      "backend_src_routes_notificationroutes_protect",
+      "backend_src_routes_notificationroutes_router"
     ],
     "18": [
       "frontend_src_app_profilepage",
@@ -535,6 +623,8 @@
       "frontend_src_features_dashboard_services_playerapi",
       "frontend_src_features_dashboard_services_playerapi_getmyprofile",
       "frontend_src_features_dashboard_services_playerapi_updatemyprofile",
+      "frontend_src_hooks_useplayerstatssocket",
+      "frontend_src_hooks_useplayerstatssocket_useplayerstatssocket",
       "frontend_src_pages_profilepage",
       "frontend_src_pages_profilepage_avatar_extensions",
       "frontend_src_pages_profilepage_avatar_mimes",
@@ -546,43 +636,6 @@
       "frontend_src_pages_profilepage_validateavatarfile"
     ],
     "19": [
-      "frontend_src_features_admin_memberstab",
-      "frontend_src_features_admin_memberstab_memberstab",
-      "frontend_src_features_admin_transfertab",
-      "frontend_src_features_admin_transfertab_transfertab",
-      "frontend_src_features_dashboard_data_playertypes",
-      "frontend_src_features_dashboard_data_playertypes_mock_player",
-      "frontend_src_features_dashboard_data_playertypes_role_label",
-      "frontend_src_services_api_adminapi",
-      "frontend_src_services_api_adminapi_claimleadership",
-      "frontend_src_services_api_adminapi_completetransfer",
-      "frontend_src_services_api_adminapi_deleteexmember",
-      "frontend_src_services_api_adminapi_getexmembers",
-      "frontend_src_services_api_adminapi_getroster",
-      "frontend_src_services_api_adminapi_initiatetransfer",
-      "frontend_src_services_api_adminapi_processmemberaction",
-      "frontend_src_services_api_adminapi_promotemember",
-      "frontend_src_services_api_adminapi_removeguildplayer"
-    ],
-    "20": [
-      "backend_package",
-      "backend_package_author",
-      "backend_package_bugs",
-      "backend_package_bugs_url",
-      "backend_package_description",
-      "backend_package_engines",
-      "backend_package_engines_node",
-      "backend_package_homepage",
-      "backend_package_license",
-      "backend_package_main",
-      "backend_package_name",
-      "backend_package_repository",
-      "backend_package_repository_type",
-      "backend_package_repository_url",
-      "backend_package_type",
-      "backend_package_version"
-    ],
-    "21": [
       "backend_src_controllers_leaderboardcontroller",
       "backend_src_controllers_leaderboardcontroller_clamppercent",
       "backend_src_controllers_leaderboardcontroller_computetotals",
@@ -600,13 +653,13 @@
       "backend_src_routes_leaderboardroutes_getguildleaderboard_getplayerleaderboard",
       "backend_src_routes_leaderboardroutes_router"
     ],
-    "22": [
+    "20": [
       "free_fire_api_api_ff_account_getmajorlogin",
-      "free_fire_api_api_ff_ingame_searchclanbyname",
-      "free_fire_api_test_guild_main",
       "free_fire_api_utilities_ff_utils",
       "free_fire_api_utilities_ff_utils_aescbcdecrypt",
       "free_fire_api_utilities_ff_utils_aescbcencrypt",
+      "free_fire_api_utilities_ff_utils_apierror",
+      "free_fire_api_utilities_ff_utils_apierror_constructor",
       "free_fire_api_utilities_ff_utils_crypto",
       "free_fire_api_utilities_ff_utils_decodeproto",
       "free_fire_api_utilities_ff_utils_encodeproto",
@@ -618,75 +671,42 @@
       "free_fire_api_utilities_ff_utils_upstream_agent",
       "free_fire_api_utilities_ff_utils_zlib"
     ],
-    "23": [
-      "backend_src_middleware_authmiddleware",
-      "backend_src_middleware_authmiddleware_jwt",
-      "backend_src_middleware_authmiddleware_membership",
+    "21": [
+      "frontend_src_features_dashboard_components_modestatus",
+      "frontend_src_features_dashboard_components_modestatus_metric",
+      "frontend_src_features_dashboard_components_modestatus_modestatscard",
+      "frontend_src_features_dashboard_components_playeridcard",
+      "frontend_src_features_dashboard_components_playeridcard_playeridcard",
+      "frontend_src_features_dashboard_components_rankcard",
+      "frontend_src_features_dashboard_components_rankcard_rankingcard",
+      "frontend_src_features_dashboard_components_seasonstatus",
+      "frontend_src_features_dashboard_components_seasonstatus_seasonstatssection",
+      "frontend_src_pages_homepage",
+      "frontend_src_pages_homepage_homepageskeleton",
+      "frontend_src_pages_homepage_leaguetable",
+      "frontend_src_pages_homepage_mediapreviewcard",
+      "frontend_src_utils_mediaurl",
+      "frontend_src_utils_mediaurl_api_origin",
+      "frontend_src_utils_mediaurl_resolvemediaurl"
+    ],
+    "22": [
+      "backend_src_controllers_playercontroller",
+      "backend_src_controllers_playercontroller_emitplayerstatsupdate_emitplayerprofileupdate",
+      "backend_src_controllers_playercontroller_getmyprofile",
+      "backend_src_controllers_playercontroller_guild",
+      "backend_src_controllers_playercontroller_membership",
+      "backend_src_controllers_playercontroller_playerprofile",
+      "backend_src_controllers_playercontroller_syncprofilefrommembership",
+      "backend_src_controllers_playercontroller_updatemyprofile",
+      "backend_src_controllers_playercontroller_validateseasonstats",
       "backend_src_middleware_authmiddleware_optionalauth",
-      "backend_src_middleware_authmiddleware_protect",
-      "backend_src_middleware_authmiddleware_requirerole",
-      "backend_src_middleware_authmiddleware_user",
-      "backend_src_models_membership",
-      "backend_src_models_membership_membershipschema",
-      "backend_src_models_membership_mongoose",
       "backend_src_routes_playerroutes",
       "backend_src_routes_playerroutes_express",
       "backend_src_routes_playerroutes_getmyprofile_updatemyprofile",
       "backend_src_routes_playerroutes_protect_optionalauth",
       "backend_src_routes_playerroutes_router"
     ],
-    "24": [
-      "free_fire_api_probe_diff",
-      "free_fire_api_probe_diff_aescbcencrypt",
-      "free_fire_api_probe_diff_crypto",
-      "free_fire_api_probe_diff_main_iv",
-      "free_fire_api_probe_diff_main_key",
-      "free_fire_api_probe_diff_mine",
-      "free_fire_api_probe_diff_mineraw",
-      "free_fire_api_probe_diff_myenc",
-      "free_fire_api_probe_diff_myproto",
-      "free_fire_api_probe_diff_pad",
-      "free_fire_api_probe_diff_path",
-      "free_fire_api_probe_diff_theirenc",
-      "free_fire_api_probe_diff_theirproto",
-      "free_fire_api_probe_diff_theirs",
-      "free_fire_api_probe_diff_theirsraw"
-    ],
-    "25": [
-      "frontend_src_app_notificationspage",
-      "frontend_src_pages_notificationspage",
-      "frontend_src_pages_notificationspage_notificationspage",
-      "frontend_src_services_api_client",
-      "frontend_src_services_api_client_addbotprotectionfields",
-      "frontend_src_services_api_client_apierror",
-      "frontend_src_services_api_client_apierror_constructor",
-      "frontend_src_services_api_client_client_fingerprint",
-      "frontend_src_services_api_client_defaultmessageforstatus",
-      "frontend_src_services_api_client_generateclientfingerprint",
-      "frontend_src_services_api_client_page_load_time",
-      "frontend_src_services_api_notificationapi",
-      "frontend_src_services_api_notificationapi_getnotifications",
-      "frontend_src_services_api_notificationapi_markallread",
-      "frontend_src_services_api_notificationapi_markread"
-    ],
-    "26": [
-      "frontend_src_components_layout_desktopnavbar",
-      "frontend_src_components_layout_desktopnavbar_desktopnavbar",
-      "frontend_src_components_layout_desktopnavbar_navitems",
-      "frontend_src_components_layout_desktopnavbar_useunreadcount",
-      "frontend_src_components_layout_mobileheader",
-      "frontend_src_components_layout_mobileheader_mobileheader",
-      "frontend_src_components_layout_navbar",
-      "frontend_src_components_ui_avatar",
-      "frontend_src_components_ui_avatar_avatar",
-      "frontend_src_features_dashboard_components_playeridcard",
-      "frontend_src_features_dashboard_components_playeridcard_playeridcard",
-      "frontend_src_services_api_notificationapi_getunreadcount",
-      "frontend_src_utils_mediaurl",
-      "frontend_src_utils_mediaurl_api_origin",
-      "frontend_src_utils_mediaurl_resolvemediaurl"
-    ],
-    "27": [
+    "23": [
       "backend_src_controllers_authcontroller_changepassword",
       "backend_src_controllers_authcontroller_checkguilduid",
       "backend_src_controllers_authcontroller_deleteaccount",
@@ -702,7 +722,7 @@
       "backend_src_routes_authroutes_protectedbotprevention",
       "backend_src_routes_authroutes_router"
     ],
-    "28": [
+    "24": [
       "free_fire_api_test_ui_cdp",
       "free_fire_api_test_ui_cdp_edge",
       "free_fire_api_test_ui_cdp_edge_candidates",
@@ -718,7 +738,22 @@
       "free_fire_api_test_ui_cdp_sleep",
       "free_fire_api_test_ui_cdp_userdata"
     ],
-    "29": [
+    "25": [
+      "backend_src_config_upload",
+      "backend_src_config_upload_limits",
+      "backend_src_config_upload_mime_types",
+      "backend_src_config_upload_path",
+      "backend_src_middleware_uploadmiddleware",
+      "backend_src_middleware_uploadmiddleware_crypto",
+      "backend_src_middleware_uploadmiddleware_makefilefilter",
+      "backend_src_middleware_uploadmiddleware_memory",
+      "backend_src_middleware_uploadmiddleware_multer",
+      "backend_src_middleware_uploadmiddleware_path",
+      "backend_src_middleware_uploadmiddleware_upload",
+      "backend_src_middleware_uploadmiddleware_upload_dir_upload_url_prefix_limits_mime_types",
+      "backend_src_middleware_uploadmiddleware_validateuploadedfile"
+    ],
+    "26": [
       "backend_src_controllers_membercontroller",
       "backend_src_controllers_membercontroller_default_members",
       "backend_src_controllers_membercontroller_getmemberbyid",
@@ -733,22 +768,7 @@
       "backend_src_routes_memberroutes_getmembers_getmemberbyid",
       "backend_src_routes_memberroutes_router"
     ],
-    "30": [
-      "backend_src_controllers_notificationcontroller",
-      "backend_src_controllers_notificationcontroller_getnotifications",
-      "backend_src_controllers_notificationcontroller_getunreadcount",
-      "backend_src_controllers_notificationcontroller_markread",
-      "backend_src_controllers_notificationcontroller_notification",
-      "backend_src_models_notification",
-      "backend_src_models_notification_mongoose",
-      "backend_src_models_notification_notificationschema",
-      "backend_src_routes_notificationroutes",
-      "backend_src_routes_notificationroutes_express",
-      "backend_src_routes_notificationroutes_getnotifications_getunreadcount_markread",
-      "backend_src_routes_notificationroutes_protect",
-      "backend_src_routes_notificationroutes_router"
-    ],
-    "31": [
+    "27": [
       "free_fire_api_api_ff_ingame_getplayerpersonalshow",
       "free_fire_api_api_ff_ingame_getplayerrank",
       "free_fire_api_api_ff_ingame_splitpasses",
@@ -763,24 +783,22 @@
       "free_fire_api_configuration_ranktiers_progress",
       "free_fire_api_configuration_ranktiers_progressof"
     ],
-    "32": [
-      "backend_package_dependencies_dotenv",
-      "backend_package_dependencies_protobufjs",
-      "backend_package_json_dotenv",
-      "backend_package_json_protobufjs",
-      "free_fire_api_package_dependencies",
-      "free_fire_api_package_dependencies_cors",
-      "free_fire_api_package_dependencies_dotenv",
-      "free_fire_api_package_dependencies_express",
-      "free_fire_api_package_dependencies_nodemon",
-      "free_fire_api_package_dependencies_protobufjs",
-      "free_fire_api_package_dependencies_protobufjs_cli",
-      "free_fire_api_package_json_cors",
-      "free_fire_api_package_json_express",
-      "free_fire_api_package_json_nodemon",
-      "protobufjs_cli"
+    "28": [
+      "frontend_src_components_toast_toast",
+      "frontend_src_components_toast_toast_ismobile",
+      "frontend_src_components_toast_toast_toast",
+      "frontend_src_components_toast_toast_toasticon",
+      "frontend_src_components_toast_toastcontainer",
+      "frontend_src_components_toast_toastcontainer_toastcontainer",
+      "frontend_src_components_toast_toastprovider",
+      "frontend_src_components_toast_toastprovider_toastcontext",
+      "frontend_src_components_toast_toastprovider_toastprovider",
+      "frontend_src_components_toast_toasttypes",
+      "frontend_src_components_toast_toasttypes_max_visible_toasts",
+      "frontend_src_components_toast_toasttypes_toast_colors",
+      "frontend_src_components_toast_toasttypes_toast_durations"
     ],
-    "33": [
+    "29": [
       "backend_src_middleware_botprevention",
       "backend_src_middleware_botprevention_analyzebehavior",
       "backend_src_middleware_botprevention_botprevention",
@@ -794,84 +812,19 @@
       "backend_src_middleware_botprevention_validateclientfingerprint",
       "backend_src_middleware_botprevention_verifyhcaptcha"
     ],
-    "34": [
-      "free_fire_api_probe_login",
-      "free_fire_api_probe_login_aescbcencrypt",
-      "free_fire_api_probe_login_crypto",
-      "free_fire_api_probe_login_granttoken",
-      "free_fire_api_probe_login_https",
-      "free_fire_api_probe_login_main_iv",
-      "free_fire_api_probe_login_main_key",
-      "free_fire_api_probe_login_majorlogin",
-      "free_fire_api_probe_login_pad_tocamel",
-      "free_fire_api_probe_login_post",
-      "free_fire_api_probe_login_zlib",
-      "free_fire_api_proto_compiled"
+    "30": [
+      "free_fire_api_api_ff_ingame_addrates",
+      "free_fire_api_api_ff_ingame_authheaders",
+      "free_fire_api_api_ff_ingame_getplayerstats",
+      "free_fire_api_api_ff_ingame_postproto",
+      "free_fire_api_api_ff_ingame_searchaccountbykeyword",
+      "free_fire_api_api_ff_ingame_setplayergalleryshowinfo",
+      "free_fire_api_cli",
+      "free_fire_api_cli_accounts",
+      "free_fire_api_cli_getgarenatoken_getmajorlogin",
+      "free_fire_api_cli_getplayerpersonalshow_getplayerstats_searchaccountbykeyword"
     ],
-    "35": [
-      "frontend_src_components_layout_bottomnavbar",
-      "frontend_src_components_layout_bottomnavbar_bottomnavbar",
-      "frontend_src_components_layout_bottomnavbar_navitems",
-      "frontend_src_features_auth_context_authcontext",
-      "frontend_src_features_auth_context_authcontext_authcontext",
-      "frontend_src_features_auth_context_authcontext_useauth",
-      "frontend_src_features_auth_hooks_uselogin",
-      "frontend_src_features_auth_hooks_uselogin_uselogin",
-      "frontend_src_hooks_useplayerstatssocket",
-      "frontend_src_hooks_useplayerstatssocket_useplayerstatssocket",
-      "frontend_src_pages_homepage_homepage",
-      "ref_react"
-    ],
-    "36": [
-      "backend_src_models_user",
-      "backend_src_models_user_bcrypt",
-      "backend_src_models_user_mongoose",
-      "backend_src_models_user_userschema",
-      "backend_src_services_socket",
-      "backend_src_services_socket_getio",
-      "backend_src_services_socket_initializesocket",
-      "backend_src_services_socket_jwt",
-      "backend_src_services_socket_server",
-      "backend_src_services_socket_user",
-      "backend_src_services_socket_usersockets"
-    ],
-    "37": [
-      "frontend_src_features_dashboard_components_modestatus",
-      "frontend_src_features_dashboard_components_modestatus_metric",
-      "frontend_src_features_dashboard_components_modestatus_modestatscard",
-      "frontend_src_features_dashboard_components_rankcard",
-      "frontend_src_features_dashboard_components_rankcard_rankingcard",
-      "frontend_src_features_dashboard_components_seasonstatus",
-      "frontend_src_features_dashboard_components_seasonstatus_seasonstatssection",
-      "frontend_src_pages_homepage",
-      "frontend_src_pages_homepage_homepageskeleton",
-      "frontend_src_pages_homepage_leaguetable",
-      "frontend_src_pages_homepage_mediapreviewcard"
-    ],
-    "38": [
-      "frontend_src_components_toast_toast",
-      "frontend_src_components_toast_toast_ismobile",
-      "frontend_src_components_toast_toast_toast",
-      "frontend_src_components_toast_toast_toasticon",
-      "frontend_src_components_toast_toastcontainer",
-      "frontend_src_components_toast_toastcontainer_toastcontainer",
-      "frontend_src_components_toast_toasttypes",
-      "frontend_src_components_toast_toasttypes_max_visible_toasts",
-      "frontend_src_components_toast_toasttypes_toast_colors",
-      "frontend_src_components_toast_toasttypes_toast_durations"
-    ],
-    "39": [
-      "free_fire_api_package",
-      "free_fire_api_package_description",
-      "free_fire_api_package_main",
-      "free_fire_api_package_name",
-      "free_fire_api_package_scripts",
-      "free_fire_api_package_scripts_build_proto",
-      "free_fire_api_package_scripts_dev",
-      "free_fire_api_package_scripts_start",
-      "free_fire_api_package_version"
-    ],
-    "40": [
+    "31": [
       "frontend_oxlintrc",
       "frontend_oxlintrc_plugins",
       "frontend_oxlintrc_rules",
@@ -882,7 +835,7 @@
       "ref_typescript",
       "ref_warn"
     ],
-    "41": [
+    "32": [
       "frontend_src_features_auth_components_loginform",
       "frontend_src_features_auth_components_loginform_loginform",
       "frontend_src_features_auth_components_sociallogin",
@@ -893,28 +846,26 @@
       "frontend_src_pages_authpage",
       "frontend_src_pages_authpage_authpage"
     ],
-    "42": [
-      "frontend_src_pages_guildpage",
-      "frontend_src_pages_guildpage_guildpage",
-      "frontend_src_services_api_guildapi",
-      "frontend_src_services_api_guildapi_applytoguild",
-      "frontend_src_services_api_guildapi_disbandguild",
-      "frontend_src_services_api_guildapi_getguildprofile",
-      "frontend_src_services_api_guildapi_getprivateguildview",
-      "frontend_src_services_api_guildapi_leaveguild",
-      "frontend_src_services_api_guildapi_updateguild"
+    "33": [
+      "backend_src_controllers_mediacontroller_requestorigin",
+      "backend_src_controllers_mediacontroller_resubmitmedia",
+      "backend_src_controllers_mediacontroller_uploadavatar",
+      "backend_src_controllers_mediacontroller_uploadmedia",
+      "backend_src_middleware_uploadmiddleware_persistvalidatedfile",
+      "backend_src_models_membership",
+      "backend_src_models_membership_membershipschema",
+      "backend_src_models_membership_mongoose"
     ],
-    "43": [
-      "frontend_src_features_admin_guildplayerstab",
-      "frontend_src_features_admin_guildplayerstab_games",
-      "frontend_src_features_admin_guildplayerstab_guildplayerstab",
-      "frontend_src_features_admin_guildplayerstab_status_filters",
-      "frontend_src_features_admin_guildplayerstab_statusbadge",
-      "frontend_src_services_api_adminapi_addplayerbygameuid",
-      "frontend_src_services_api_adminapi_getguildplayers",
-      "frontend_src_services_api_adminapi_searchguildplayer"
+    "34": [
+      "backend_src_controllers_authcontroller_completeonboarding",
+      "backend_src_controllers_authcontroller_createguild",
+      "backend_src_controllers_authcontroller_getme",
+      "backend_src_controllers_authcontroller_serializeuser",
+      "backend_src_controllers_authcontroller_submituidregion",
+      "backend_src_services_socket_emitplayerprofileupdate",
+      "backend_src_services_socket_emitplayerstatsupdate"
     ],
-    "44": [
+    "35": [
       "frontend_src_app_errorboundary",
       "frontend_src_app_errorboundary_componentdidcatch",
       "frontend_src_app_errorboundary_constructor",
@@ -922,307 +873,315 @@
       "frontend_src_app_errorboundary_handlereset",
       "frontend_src_app_errorboundary_render"
     ],
-    "45": [
+    "36": [
+      "backend_src_utils_filevalidator",
+      "backend_src_utils_filevalidator_detectfiletype",
+      "backend_src_utils_filevalidator_matches",
+      "backend_src_utils_filevalidator_startswithascii",
+      "backend_src_utils_filevalidator_validateuploadedfile"
+    ],
+    "37": [
       "free_fire_api_index",
       "free_fire_api_index_app",
       "free_fire_api_index_express",
       "free_fire_api_index_path",
       "free_fire_api_index_rationale_9"
     ],
-    "46": [
-      "backend_package_scripts",
-      "backend_package_scripts_dev",
-      "backend_package_scripts_start",
-      "backend_package_scripts_test"
+    "38": [
+      "backend_src_middleware_ratelimiter",
+      "backend_src_middleware_ratelimiter_authlimiter",
+      "backend_src_middleware_ratelimiter_ratelimit",
+      "backend_src_middleware_ratelimiter_writelimiter"
     ],
-    "48": [
-      "backend_package_devdependencies",
-      "backend_package_devdependencies_nodemon",
-      "backend_package_json_nodemon"
+    "39": [
+      "backend_src_models_guild",
+      "backend_src_models_guild_guildschema",
+      "backend_src_models_guild_mongoose"
     ],
-    "49": [
+    "40": [
       "free_fire_api_additional_generateaccounts",
       "free_fire_api_additional_generateaccounts_register"
     ],
-    "50": [
+    "41": [
       "free_fire_api_proto_build",
       "free_fire_api_proto_build_sh__entry"
     ],
-    "51": [
+    "42": [
       "frontend_src_components_ui_button",
       "frontend_src_components_ui_button_button"
     ],
-    "52": [
+    "43": [
       "frontend_src_components_ui_card",
       "frontend_src_components_ui_card_card"
     ],
-    "53": [
+    "44": [
       "frontend_src_components_ui_input",
       "frontend_src_components_ui_input_input"
     ],
-    "54": [
+    "45": [
       "frontend_src_components_ui_loader",
       "frontend_src_components_ui_loader_loader"
     ],
-    "55": [
+    "46": [
       "frontend_src_components_ui_modal",
       "frontend_src_components_ui_modal_modal"
     ],
-    "56": [
+    "47": [
       "frontend_src_components_ui_notificationbell",
       "frontend_src_components_ui_notificationbell_notificationbell"
     ],
-    "57": [
+    "48": [
       "frontend_src_components_ui_searchbar",
       "frontend_src_components_ui_searchbar_searchbar"
     ],
-    "58": [
+    "49": [
       "frontend_src_features_dashboard_components_stattile",
       "frontend_src_features_dashboard_components_stattile_stattile"
     ],
-    "59": [
+    "50": [
       "frontend_vercel",
       "frontend_vercel_rewrites"
     ],
-    "60": [
+    "51": [
       "free_fire_api_proto_compiled_abtestchoice_tojson"
     ],
-    "61": [
+    "52": [
       "free_fire_api_proto_compiled_accountbasicsparkinfo_tojson"
     ],
-    "62": [
+    "53": [
       "free_fire_api_proto_compiled_accountcollectioncustomiteminfo_tojson"
     ],
-    "63": [
+    "54": [
       "free_fire_api_proto_compiled_accountinfobasic_tojson"
     ],
-    "64": [
+    "55": [
       "free_fire_api_proto_compiled_accountinfowithstatstoclient_tojson"
     ],
-    "65": [
+    "56": [
       "free_fire_api_proto_compiled_accountinfowithtcstats_tojson"
     ],
-    "66": [
+    "57": [
       "free_fire_api_proto_compiled_accountmmrinfo_tojson"
     ],
-    "67": [
+    "58": [
       "free_fire_api_proto_compiled_accountnews_tojson"
     ],
-    "68": [
+    "59": [
       "free_fire_api_proto_compiled_accountnewscontent_tojson"
     ],
-    "69": [
+    "60": [
       "free_fire_api_proto_compiled_accountprefers_tojson"
     ],
-    "70": [
+    "61": [
       "free_fire_api_proto_compiled_avatarprofile_tojson"
     ],
-    "71": [
+    "62": [
       "free_fire_api_proto_compiled_avatarskillslot_tojson"
     ],
-    "72": [
+    "63": [
       "free_fire_api_proto_compiled_badgeinfo_tojson"
     ],
-    "73": [
+    "64": [
       "free_fire_api_proto_compiled_basicepinfo_tojson"
     ],
-    "74": [
+    "65": [
       "free_fire_api_proto_compiled_blacklistinfores_tojson"
     ],
-    "75": [
+    "66": [
       "free_fire_api_proto_compiled_blacklistres_tojson"
     ],
-    "76": [
+    "67": [
       "free_fire_api_proto_compiled_claninfo_tojson"
     ],
-    "77": [
+    "68": [
       "free_fire_api_proto_compiled_claninfobasic_tojson"
     ],
-    "78": [
+    "69": [
       "free_fire_api_proto_compiled_clanmainpageinforequest_tojson"
     ],
-    "79": [
+    "70": [
       "free_fire_api_proto_compiled_clanmainpageinforesponse_tojson"
     ],
-    "80": [
+    "71": [
       "free_fire_api_proto_compiled_clanmemberinfo_tojson"
     ],
-    "81": [
+    "72": [
       "free_fire_api_proto_compiled_clansummary_tojson"
     ],
-    "82": [
+    "73": [
       "free_fire_api_proto_compiled_creditscoreinfobasic_tojson"
     ],
-    "83": [
+    "74": [
       "free_fire_api_proto_compiled_cspeaktitleinfo_tojson"
     ],
-    "84": [
+    "75": [
       "free_fire_api_proto_compiled_detailedtcstats_tojson"
     ],
-    "85": [
+    "76": [
       "free_fire_api_proto_compiled_diamondcostres_tojson"
     ],
-    "86": [
+    "77": [
       "free_fire_api_proto_compiled_externaliconinfo_tojson"
     ],
-    "87": [
+    "78": [
       "free_fire_api_proto_compiled_ffanticonfigdesc_tojson"
     ],
-    "88": [
+    "79": [
       "free_fire_api_proto_compiled_fuzzysearchclanbynamerequest_tojson"
     ],
-    "89": [
+    "80": [
       "free_fire_api_proto_compiled_fuzzysearchclanbynameresponse_tojson"
     ],
-    "90": [
+    "81": [
       "free_fire_api_proto_compiled_galleryshowextrainfo_tojson"
     ],
-    "91": [
+    "82": [
       "free_fire_api_proto_compiled_galleryshowinfo_tojson"
     ],
-    "92": [
+    "83": [
       "free_fire_api_proto_compiled_galleryshowinfoitem_tojson"
     ],
-    "93": [
+    "84": [
       "free_fire_api_proto_compiled_guildwartitleinfo_tojson"
     ],
-    "94": [
+    "85": [
       "free_fire_api_proto_compiled_itemtaginfo_tojson"
     ],
-    "95": [
+    "86": [
       "free_fire_api_proto_compiled_leaderboardtitleinfo_tojson"
     ],
-    "96": [
+    "87": [
       "free_fire_api_proto_compiled_loginqueueinfo_tojson"
     ],
-    "97": [
+    "88": [
       "free_fire_api_proto_compiled_majorlogin_pb2"
     ],
-    "98": [
+    "89": [
       "free_fire_api_proto_compiled_modestatsinfo_tojson"
     ],
-    "99": [
+    "90": [
       "free_fire_api_proto_compiled_modestatssummaryinfo_tojson"
     ],
-    "100": [
+    "91": [
       "free_fire_api_proto_compiled_occupationinfo_tojson"
     ],
-    "101": [
+    "92": [
       "free_fire_api_proto_compiled_occupationseasoninfo_tojson"
     ],
-    "102": [
+    "93": [
       "free_fire_api_proto_compiled_petinfo_tojson"
     ],
-    "103": [
+    "94": [
       "free_fire_api_proto_compiled_petskillinfo_tojson"
     ],
-    "104": [
+    "95": [
       "free_fire_api_proto_compiled_playercsstats_pb2"
     ],
-    "105": [
+    "96": [
       "free_fire_api_proto_compiled_playerdetailedstats_tojson"
     ],
-    "106": [
+    "97": [
       "free_fire_api_proto_compiled_playerpersonalshow_pb2"
     ],
-    "107": [
+    "98": [
       "free_fire_api_proto_compiled_playerstats_pb2"
     ],
-    "108": [
+    "99": [
       "free_fire_api_proto_compiled_primeprivilegedetail_tojson"
     ],
-    "109": [
+    "100": [
       "free_fire_api_proto_compiled_rankingtitleinfo_tojson"
     ],
-    "110": [
+    "101": [
       "free_fire_api_proto_compiled_request_single_tojson"
     ],
-    "111": [
+    "102": [
       "free_fire_api_proto_compiled_request_tojson"
     ],
-    "112": [
+    "103": [
       "free_fire_api_proto_compiled_response_tojson"
     ],
-    "113": [
+    "104": [
       "free_fire_api_proto_compiled_searchaccountbyname_pb2"
     ],
-    "114": [
+    "105": [
       "free_fire_api_proto_compiled_setplayergalleryshowinfo_pb2"
     ],
-    "115": [
+    "106": [
       "free_fire_api_proto_compiled_socialbasicinfo_tojson"
     ],
-    "116": [
+    "107": [
       "free_fire_api_proto_compiled_socialhighlight_tojson"
     ],
-    "117": [
+    "108": [
       "free_fire_api_proto_compiled_socialhighlightswithsocialbasicinfo_tojson"
     ],
-    "118": [
+    "109": [
       "free_fire_api_proto_compiled_sparkinfo_tojson"
     ],
-    "119": [
+    "110": [
       "free_fire_api_proto_compiled_sparkstageappearance_tojson"
     ],
-    "120": [
+    "111": [
       "free_fire_api_proto_compiled_weaponpowertitleinfo_tojson"
     ],
-    "121": [
+    "112": [
       "free_fire_api_proto_compiled_workshopaccountsummaryinfo_tojson"
     ],
-    "122": [
+    "113": [
       "frontend_vite_config"
     ]
   },
   "cohesion": {
-    "0": 0.06845513413506013,
-    "1": 0.08636977058029689,
-    "2": 0.05714285714285714,
-    "3": 0.15483870967741936,
-    "4": 0.08505747126436781,
-    "5": 0.12561576354679804,
-    "6": 0.13227513227513227,
-    "7": 0.10256410256410256,
-    "8": 0.10256410256410256,
-    "9": 0.09,
-    "10": 0.08695652173913043,
-    "11": 0.1383399209486166,
-    "12": 0.15810276679841898,
-    "13": 0.09956709956709957,
-    "14": 0.10822510822510822,
-    "15": 0.14285714285714285,
-    "16": 0.1761904761904762,
-    "17": 0.17647058823529413,
-    "18": 0.16176470588235295,
-    "19": 0.27205882352941174,
-    "20": 0.125,
-    "21": 0.19166666666666668,
-    "22": 0.175,
-    "23": 0.1523809523809524,
-    "24": 0.13333333333333333,
-    "25": 0.19047619047619047,
-    "26": 0.3047619047619048,
-    "27": 0.14285714285714285,
-    "28": 0.1978021978021978,
-    "29": 0.1794871794871795,
-    "30": 0.19230769230769232,
-    "31": 0.19230769230769232,
-    "32": 0.13333333333333333,
-    "33": 0.2727272727272727,
-    "34": 0.16666666666666666,
-    "35": 0.3181818181818182,
-    "36": 0.18181818181818182,
-    "37": 0.23636363636363636,
-    "38": 0.3111111111111111,
-    "39": 0.2222222222222222,
-    "40": 0.2222222222222222,
-    "41": 0.3611111111111111,
-    "42": 0.5555555555555556,
-    "43": 0.35714285714285715,
-    "44": 0.3333333333333333,
-    "45": 0.4,
-    "46": 0.5,
-    "48": 0.6666666666666666,
+    "0": 0.05412371134020619,
+    "1": 0.043478260869565216,
+    "2": 0.08636977058029689,
+    "3": 0.08250355618776671,
+    "4": 0.05714285714285714,
+    "5": 0.06628787878787878,
+    "6": 0.15483870967741936,
+    "7": 0.08505747126436781,
+    "8": 0.14461538461538462,
+    "9": 0.10666666666666667,
+    "10": 0.14130434782608695,
+    "11": 0.18840579710144928,
+    "12": 0.08695652173913043,
+    "13": 0.12648221343873517,
+    "14": 0.09881422924901186,
+    "15": 0.10476190476190476,
+    "16": 0.15263157894736842,
+    "17": 0.1286549707602339,
+    "18": 0.15204678362573099,
+    "19": 0.19166666666666668,
+    "20": 0.16666666666666666,
+    "21": 0.2,
+    "22": 0.18095238095238095,
+    "23": 0.14285714285714285,
+    "24": 0.1978021978021978,
+    "25": 0.1794871794871795,
+    "26": 0.1794871794871795,
+    "27": 0.19230769230769232,
+    "28": 0.2564102564102564,
+    "29": 0.2727272727272727,
+    "30": 0.2222222222222222,
+    "31": 0.2222222222222222,
+    "32": 0.3611111111111111,
+    "33": 0.2857142857142857,
+    "34": 0.38095238095238093,
+    "35": 0.3333333333333333,
+    "36": 0.7,
+    "37": 0.4,
+    "38": 0.5,
+    "39": 0.6666666666666666,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
     "49": 1.0,
     "50": 1.0,
     "51": 1.0,
@@ -1287,16 +1246,7 @@
     "110": 1.0,
     "111": 1.0,
     "112": 1.0,
-    "113": 1.0,
-    "114": 1.0,
-    "115": 1.0,
-    "116": 1.0,
-    "117": 1.0,
-    "118": 1.0,
-    "119": 1.0,
-    "120": 1.0,
-    "121": 1.0,
-    "122": 1.0
+    "113": 1.0
   },
   "gods": [
     {
@@ -1340,13 +1290,13 @@
       "degree": 12
     },
     {
-      "id": "free_fire_api_utilities_until_encode_protobuf",
-      "label": "encode_protobuf()",
+      "id": "free_fire_api_api_ff_ingame_postproto",
+      "label": "postProto()",
       "degree": 11
     },
     {
-      "id": "free_fire_api_api_ff_ingame_postproto",
-      "label": "postProto()",
+      "id": "free_fire_api_utilities_until_encode_protobuf",
+      "label": "encode_protobuf()",
       "degree": 11
     }
   ],
@@ -1363,17 +1313,6 @@
       "why": "bridges separate communities; peripheral node `AdminPage()` unexpectedly reaches hub `useAuth()`"
     },
     {
-      "source": "AvatarWithFallback()",
-      "target": "resolveMediaUrl()",
-      "source_files": [
-        "FrontEnd/src/pages/LeaderboardPage.jsx",
-        "FrontEnd/src/utils/mediaUrl.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities; peripheral node `AvatarWithFallback()` unexpectedly reaches hub `resolveMediaUrl()`"
-    },
-    {
       "source": "updateMyProfile()",
       "target": "apiFetch()",
       "source_files": [
@@ -1385,63 +1324,74 @@
       "why": "bridges separate communities; peripheral node `updateMyProfile()` unexpectedly reaches hub `apiFetch()`"
     },
     {
-      "source": "removeGuildPlayer()",
-      "target": "apiFetch()",
+      "source": "AvatarWithFallback()",
+      "target": "resolveMediaUrl()",
       "source_files": [
-        "FrontEnd/src/services/api/adminApi.js",
-        "FrontEnd/src/services/api/client.js"
+        "FrontEnd/src/pages/LeaderboardPage.jsx",
+        "FrontEnd/src/utils/mediaUrl.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
-      "why": "bridges separate communities; peripheral node `removeGuildPlayer()` unexpectedly reaches hub `apiFetch()`"
+      "why": "bridges separate communities; peripheral node `AvatarWithFallback()` unexpectedly reaches hub `resolveMediaUrl()`"
     },
     {
-      "source": "markRead()",
-      "target": "apiFetch()",
+      "source": "get_player_stats()",
+      "target": "APIError",
       "source_files": [
-        "FrontEnd/src/services/api/notificationApi.js",
-        "FrontEnd/src/services/api/client.js"
+        "free fire api/Api/InGame.py",
+        "free fire api/app.py"
       ],
-      "confidence": "EXTRACTED",
+      "confidence": "INFERRED",
       "relation": "calls",
-      "why": "bridges separate communities; peripheral node `markRead()` unexpectedly reaches hub `apiFetch()`"
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
+      "source": "get_player_stats()",
+      "target": "ProtobufError",
+      "source_files": [
+        "free fire api/Api/InGame.py",
+        "free fire api/app.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source"
     }
   ],
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `apiFetch()` connect `Community 6` to `Community 8`, `Community 41`, `Community 42`, `Community 11`, `Community 43`, `Community 12`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 25`, `Community 26`?",
-      "why": "High betweenness centrality (0.021) - this node is a cross-community bridge."
+      "question": "Why does `apiFetch()` connect `Community 0` to `Community 32`, `Community 3`, `Community 8`, `Community 11`, `Community 16`, `Community 18`?",
+      "why": "High betweenness centrality (0.022) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `react` connect `Community 35` to `Community 37`, `Community 38`, `Community 40`, `Community 8`, `Community 41`, `Community 11`, `Community 12`, `Community 43`, `Community 42`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 25`, `Community 26`?",
-      "why": "High betweenness centrality (0.013) - this node is a cross-community bridge."
+      "question": "Why does `react` connect `Community 11` to `Community 0`, `Community 32`, `Community 3`, `Community 8`, `Community 16`, `Community 18`, `Community 21`, `Community 28`, `Community 31`?",
+      "why": "High betweenness centrality (0.014) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `getMemberById()` connect `Community 29` to `Community 23`?",
-      "why": "High betweenness centrality (0.007) - this node is a cross-community bridge."
+      "question": "Why does `getMemberById()` connect `Community 26` to `Community 33`?",
+      "why": "High betweenness centrality (0.008) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `path`, `Media`, `mongoose` to the rest of the system?",
-      "why": "300 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `GAMES`, `STATUS_FILTERS`, `TYPE_LABEL` to the rest of the system?",
+      "why": "281 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
       "question": "Should `Community 0` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.06845513413506013 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.05412371134020619 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
       "question": "Should `Community 1` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.08636977058029689 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.043478260869565216 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
       "question": "Should `Community 2` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.08636977058029689 - nodes in this community are weakly interconnected."
     }
   ]
 }
