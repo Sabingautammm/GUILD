@@ -22,6 +22,10 @@ pnpm-debug.log*
 dist/
 dist-ssr/
 
+# Graphify — commit the graph, skip local-only + cache
+graphify-out/cost.json
+graphify-out/cache/
+
 # OS / editor
 .DS_Store
 Thumbs.db
