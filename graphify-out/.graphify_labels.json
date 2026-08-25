@@ -152,5 +152,6 @@
   "150": "AssetResolutionService.js",
   "151": "adminApi.js",
   "152": "fileValidator.js",
-  "153": "express-rate-limit"
+  "153": "express-rate-limit",
+  "154": "Notification.js"
 }

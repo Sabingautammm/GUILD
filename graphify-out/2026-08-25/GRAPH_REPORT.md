@@ -1,16 +1,16 @@
 # Graph Report - GUILD  (2026-08-25)
 
 ## Corpus Check
-- 154 files · ~326,926 words
+- 156 files · ~327,672 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1255 nodes · 2157 edges · 153 communities (140 shown, 13 thin omitted)
-- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 135 edges (avg confidence: 0.5)
+- 1271 nodes · 2193 edges · 154 communities (144 shown, 10 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 142 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `04c1522d`
+- Built from commit: `cb06b358`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,20 +23,20 @@
 - socket.js
 - InGame.py
 - guildController.js
-- api/client.js
+- ProfilePage.jsx
 - ff-account.js
 - ff-ingame.js
-- resolveMediaUrl
+- useAuth
 - Backend/package.json
 - mediaRoutes.js
 - server.js
 - authController.js
 - 🟡 MEDIUM IMPACT ISSUES
 - LeadershipController.js
-- ProfilePage.jsx
-- leaderboardController.js
+- EnterUidRegionPage.jsx
+- uploadMiddleware.js
 - ff-utils.js
-- SeasonStatus.jsx
+- authMiddleware.js
 - playerController.js
 - authRoutes.js
 - test_ui_cdp.js
@@ -44,16 +44,16 @@
 - memberController.js
 - rankTiers.js
 - ToastProvider.jsx
-- botPrevention.js
+- Server.js
 - Backend Refactoring Orchestration Plan
 - plugins
 - GUILD Project — Comprehensive Performance Audit Report
 - FFProfileService.js
 - completeOnboarding
 - 🟢 LOW IMPACT / NICE-TO-HAVE
-- useToast
+- NotificationsPage.jsx
 - index.js
-- Server.js
+- itemCatalog.js
 - ff/client.js
 - cors
 - build.sh
@@ -63,9 +63,9 @@
 - dependencies
 - FreeFire-Api
 - 🔧 SPECIFIC CODE FIXES
-- LeaderboardPage.jsx
+- notificationRoutes.js
 - GUILD Project - Comprehensive Code Quality & Architecture Review
-- FFLiveData.jsx
+- useToast
 - 3. TYPE SAFETY — CRITICAL (3/10)
 - versionController.js
 - 🔴 CRITICAL ISSUES (Must Fix Immediately)
@@ -75,19 +75,19 @@
 - repository
 - 10. PRIORITIZED ACTION PLAN
 - 11. FILE-BY-FILE QUICK REFERENCE
-- useAuth
+- SocialLogin.jsx
 - 1. ARCHITECTURE (7.5/10)
 - 2. CODE QUALITY (7/10)
 - 4. TESTING — CRITICAL (1/10)
 - FrontEnd/README.md
-- finalizeGoogleLogin
+- GuildPage.jsx
 - 5. PERFORMANCE (6.5/10)
 - ffTransformers.js
-- ErrorBoundary
+- Membership.js
 - 6. MAINTAINABILITY (6/10)
 - 7. PATTERNS (7/10)
 - 8. ERROR HANDLING (7.5/10)
-- GuildPlayer.js
+- GuildPlayersTab.jsx
 - cookie-parser
 - express
 - google-auth-library
@@ -95,6 +95,7 @@
 - protobufjs
 - AssetResolutionService.js
 - adminApi.js
+- fileValidator.js
 - express-rate-limit
 
 ## God Nodes (most connected - your core abstractions)
@@ -110,25 +111,25 @@
 10. `GUILD Project - Comprehensive Code Quality & Architecture Review` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `PassGrid()` --calls--> `resolveMediaUrl()`  [EXTRACTED]
-  FrontEnd/src/features/dashboard/components/FFLiveData.jsx → FrontEnd/src/utils/mediaUrl.js
-- `RoleChip()` --calls--> `playerName()`  [EXTRACTED]
-  FrontEnd/src/pages/GuildPage.jsx → FrontEnd/src/utils/playerName.js
-- `MediaPreviewCard()` --calls--> `resolveMediaUrl()`  [EXTRACTED]
-  FrontEnd/src/pages/HomePage.jsx → FrontEnd/src/utils/mediaUrl.js
+- `AppRoutes()` --calls--> `useAuth()`  [EXTRACTED]
+  FrontEnd/src/App.jsx → FrontEnd/src/features/auth/context/AuthContext.jsx
+- `AdminPage()` --calls--> `useAuth()`  [EXTRACTED]
+  FrontEnd/src/pages/AdminPage.jsx → FrontEnd/src/features/auth/context/AuthContext.jsx
+- `updateMyProfile()` --calls--> `apiFetch()`  [EXTRACTED]
+  FrontEnd/src/features/dashboard/services/playerApi.js → FrontEnd/src/services/api/client.js
+- `getMembers()` --calls--> `apiFetch()`  [EXTRACTED]
+  FrontEnd/src/features/members/services/memberApi.js → FrontEnd/src/services/api/client.js
 - `AvatarWithFallback()` --calls--> `resolveMediaUrl()`  [EXTRACTED]
   FrontEnd/src/pages/LeaderboardPage.jsx → FrontEnd/src/utils/mediaUrl.js
-- `removeGuildPlayer()` --calls--> `apiFetch()`  [EXTRACTED]
-  FrontEnd/src/services/api/adminApi.js → FrontEnd/src/services/api/client.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (153 total, 13 thin omitted)
+## Communities (154 total, 10 thin omitted)
 
 ### Community 0 - "apiFetch"
-Cohesion: 0.06
-Nodes (56): EnterUidRegionPage, GuildPage, OnboardingPage, SkeletonGuild(), AuthProvider(), changePassword(), checkGuildUid(), completeOnboarding() (+48 more)
+Cohesion: 0.11
+Nodes (28): changePassword(), checkGuildUid(), createGuild(), deleteAccount(), leaderLogin(), selectGame(), submitGameIdentity(), verifyLeaderPassword() (+20 more)
 
 ### Community 1 - "dependencies"
 Cohesion: 0.09
@@ -139,8 +140,8 @@ Cohesion: 0.13
 Nodes (19): addPlayerByGameUid(), ADMIN_ROLES, getExMembers(), getGuildPlayers(), getRoster(), GuildPlayer, hardDeleteExMember(), Membership (+11 more)
 
 ### Community 3 - "App.jsx"
-Cohesion: 0.10
-Nodes (14): AdminPage, App(), GalleryPage, MemberDetailsPage, MembersPage, ReelPage, ProtectedRoutes(), FullPageSkeleton() (+6 more)
+Cohesion: 0.07
+Nodes (22): App(), AppRoutes(), ErrorBoundary, GuildPage, LeaderboardPage, MemberDetailsPage, MembersPage, ProtectedRoutes() (+14 more)
 
 ### Community 4 - "dependencies"
 Cohesion: 0.06
@@ -155,12 +156,12 @@ Cohesion: 0.25
 Nodes (6): get_player_personal_show(), get_player_stats(), Perform a fuzzy account search by keyword. Args: server_url (str): Base URL of…, Get player statistics for BR or CS mode Args: mode (str): "br" or "cs" uid…, Get player personal show data Args: authorization (str): Bearer token for…, search_account_by_keyword()
 
 ### Community 7 - "guildController.js"
-Cohesion: 0.13
-Nodes (20): applyToGuild(), ChangeLog, disbandGuild(), getGuildProfile(), getPrivateGuildView(), Guild, GUILD_ADMIN_ROLES, GuildPlayer (+12 more)
+Cohesion: 0.10
+Nodes (23): applyToGuild(), ChangeLog, disbandGuild(), getGuildProfile(), getPrivateGuildView(), Guild, GUILD_ADMIN_ROLES, GuildPlayer (+15 more)
 
-### Community 8 - "api/client.js"
-Cohesion: 0.15
-Nodes (21): MediaCard(), SkeletonMediaGrid(), MediaTab(), GalleryPage(), IMAGE_EXTENSIONS, IMAGE_MIMES, validateMediaFile(), VIDEO_EXTENSIONS (+13 more)
+### Community 8 - "ProfilePage.jsx"
+Cohesion: 0.05
+Nodes (50): GalleryPage, ProfilePage, ReelPage, MediaCard(), SkeletonProfile(), PasswordInput(), CombatBlock(), FFLiveData() (+42 more)
 
 ### Community 9 - "ff-account.js"
 Cohesion: 0.10
@@ -177,25 +178,25 @@ Nodes (21): { encodeProto, decodeProto, postExpectContinue, postForm, safeJson }
 Cohesion: 0.13
 Nodes (28): addRates(), authHeaders(), cacheGet(), cacheSet(), CLAN_ACTIVITY_TYPE, { encodeProto, decodeProto, postExpectContinue }, enrichPlayers(), getClanMainPageInfo() (+20 more)
 
-### Community 11 - "resolveMediaUrl"
-Cohesion: 0.22
-Nodes (14): BottomNavbar(), navItems, DesktopNavbar(), navItems, useUnreadCount(), MobileHeader(), Navbar(), Avatar() (+6 more)
+### Community 11 - "useAuth"
+Cohesion: 0.20
+Nodes (16): BottomNavbar(), navItems, DesktopNavbar(), navItems, useUnreadCount(), MobileHeader(), Navbar(), Avatar() (+8 more)
 
 ### Community 12 - "Backend/package.json"
 Cohesion: 0.15
 Nodes (12): author, bugs, url, description, engines, node, homepage, license (+4 more)
 
 ### Community 13 - "mediaRoutes.js"
-Cohesion: 0.06
-Nodes (45): LIMITS, MIME_TYPES, path, addComment(), getGallery(), getLimit(), getMyMedia(), getPendingForAdmin() (+37 more)
+Cohesion: 0.13
+Nodes (20): addComment(), getGallery(), getLimit(), getMyMedia(), getPendingForAdmin(), Media, moderateMedia(), mongoose (+12 more)
 
 ### Community 14 - "server.js"
 Cohesion: 0.09
 Nodes (20): { ACCOUNTS, RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS }, API_KEYS, { ApiError }, app, authenticate(), cors, CORS_ORIGINS, crypto (+12 more)
 
 ### Community 15 - "authController.js"
-Cohesion: 0.08
-Nodes (29): ADMIN_ROLES, bcrypt, buildProfileDataFromFF(), ChangeLog, cleanNickname(), crypto, DUMMY_BCRYPT_HASH, { emitPlayerStatsUpdate, emitPlayerProfileUpdate } (+21 more)
+Cohesion: 0.07
+Nodes (35): ADMIN_ROLES, bcrypt, buildProfileDataFromFF(), ChangeLog, cleanNickname(), crypto, DUMMY_BCRYPT_HASH, { emitPlayerStatsUpdate, emitPlayerProfileUpdate } (+27 more)
 
 ### Community 16 - "🟡 MEDIUM IMPACT ISSUES"
 Cohesion: 0.11
@@ -205,25 +206,29 @@ Nodes (19): BACKEND-009: Pagination Missing on `/api/guild/:guildUid` (Roster), 
 Cohesion: 0.14
 Nodes (14): bcrypt, ChangeLog, claimLeadership(), completeTransfer(), crypto, { emitPlayerProfileUpdate }, Guild, initiateTransfer() (+6 more)
 
-### Community 18 - "ProfilePage.jsx"
-Cohesion: 0.16
-Nodes (10): ProfilePage, PasswordInput(), usePlayerProfile(), getMyProfile(), AVATAR_EXTENSIONS, AVATAR_MIMES, ProfilePage(), STAT_MODES (+2 more)
+### Community 18 - "EnterUidRegionPage.jsx"
+Cohesion: 0.17
+Nodes (13): EnterUidRegionPage, OnboardingPage, completeOnboarding(), submitUidRegion(), EnterUidRegionPage(), ffAssetUrl(), REGIONS, FfPreviewBox() (+5 more)
 
-### Community 19 - "leaderboardController.js"
-Cohesion: 0.18
-Nodes (17): clampPercent(), computeTotals(), getGuildLeaderboard(), getLimit(), getOffset(), getPlayerLeaderboard(), Guild, Membership (+9 more)
+### Community 19 - "uploadMiddleware.js"
+Cohesion: 0.15
+Nodes (12): LIMITS, MIME_TYPES, path, crypto, diskStorage, multer, os, path (+4 more)
 
 ### Community 20 - "ff-utils.js"
 Cohesion: 0.15
 Nodes (15): getMajorLogin(), searchClanByName(), main(), aesCbcDecrypt(), aesCbcEncrypt(), ApiError, crypto, decodeProto() (+7 more)
 
+### Community 21 - "authMiddleware.js"
+Cohesion: 0.21
+Nodes (11): extractToken(), jwt, Membership, optionalAuth(), protect(), requireRole(), User, express (+3 more)
+
 ### Community 22 - "playerController.js"
-Cohesion: 0.08
-Nodes (35): getNotifications(), getUnreadCount(), markRead(), Notification, aggregateBr(), cleanNickname(), { emitPlayerStatsUpdate, emitPlayerProfileUpdate }, ensureStats() (+27 more)
+Cohesion: 0.07
+Nodes (42): { computeTotals }, getGuildLeaderboard(), getLimit(), getOffset(), getPlayerLeaderboard(), Guild, Membership, PlayerProfile (+34 more)
 
 ### Community 23 - "authRoutes.js"
-Cohesion: 0.11
-Nodes (19): changePassword(), checkGuildUid(), clearAuthCookies(), deleteAccount(), logout(), verifyLeaderPassword(), authLimiter, ffLimiter (+11 more)
+Cohesion: 0.10
+Nodes (23): changePassword(), checkGuildUid(), clearAuthCookies(), createGuild(), deleteAccount(), getMe(), googleAuth(), logout() (+15 more)
 
 ### Community 24 - "test_ui_cdp.js"
 Cohesion: 0.20
@@ -245,9 +250,9 @@ Nodes (12): getPlayerPersonalShow(), getPlayerRank(), splitPasses(), BR_BY_ID, B
 Cohesion: 0.26
 Nodes (8): isMobile(), Toast(), ToastContainer(), ToastContext, ToastProvider(), MAX_VISIBLE_TOASTS, TOAST_COLORS, TOAST_DURATIONS
 
-### Community 29 - "botPrevention.js"
-Cohesion: 0.23
-Nodes (13): analyzeBehavior(), botPrevention(), checkHoneypot(), crypto, generateFingerprint(), HONEYPOT_FIELDS, isSuspiciousFingerprint(), isSuspiciousFingerprintMemory() (+5 more)
+### Community 29 - "Server.js"
+Cohesion: 0.06
+Nodes (36): mongoose, analyzeBehavior(), botPrevention(), checkHoneypot(), crypto, generateFingerprint(), HONEYPOT_FIELDS, isSuspiciousFingerprint() (+28 more)
 
 ### Community 30 - "Backend Refactoring Orchestration Plan"
 Cohesion: 0.07
@@ -262,36 +267,36 @@ Cohesion: 0.17
 Nodes (11): 📦 BUNDLE SIZE ANALYSIS (Current), 🗄️ DATABASE INDEX AUDIT, 📈 ESTIMATED IMPACT AFTER FIXES, 📊 Executive Summary, GUILD Project — Comprehensive Performance Audit Report, 📋 OPTIMIZATION ROADMAP (Prioritized), 🎯 PERFORMANCE BUDGETS (Recommended), Phase 1: Critical Fixes (Week 1–2) (+3 more)
 
 ### Community 33 - "FFProfileService.js"
-Cohesion: 0.18
-Nodes (13): submitUidRegion(), { buildProfileDataFromFF }, fetchFreeFireProfile(), ffClient, generateMockProfileData(), mapSoloStats(), VALID_REGIONS, { cleanNickname } (+5 more)
+Cohesion: 0.17
+Nodes (14): submitUidRegion(), { buildProfileDataFromFF }, fetchFreeFireProfile(), ffClient, generateMockProfileData(), mapSoloStats(), VALID_REGIONS, { applyLeaderboardScore } (+6 more)
 
 ### Community 34 - "completeOnboarding"
-Cohesion: 0.33
-Nodes (5): completeOnboarding(), detectGuildStatus(), submitGameIdentity(), guildSchema, mongoose
+Cohesion: 0.22
+Nodes (7): completeOnboarding(), detectGuildStatus(), submitGameIdentity(), guildSchema, mongoose, mongoose, playerProfileSchema
 
 ### Community 35 - "🟢 LOW IMPACT / NICE-TO-HAVE"
 Cohesion: 0.20
 Nodes (10): BACKEND-015: `warmCatalog()` Runs Synchronously at Boot (Blocks Startup), BACKEND-016: No Health Check for MongoDB Connection Pool, BACKEND-017: `express.json({ limit: '100kb' })` Too Restrictive for Base64 Images, FRONTEND-008: No Bundle Analyzer in CI, FRONTEND-009: `registerSW.js` Not Inlined (Extra Request), FRONTEND-010: Missing `preconnect` / `dns-prefetch` for API Origin, 🟢 LOW IMPACT / NICE-TO-HAVE, MOBILE-006: Keystore Passwords in `gradle.properties` (Security + CI Issue) (+2 more)
 
-### Community 36 - "useToast"
-Cohesion: 0.31
-Nodes (7): NotificationsPage, ToastDemoPage, useToast(), NotificationsPage(), ToastDemoPage(), getNotifications(), markAllRead()
+### Community 36 - "NotificationsPage.jsx"
+Cohesion: 0.48
+Nodes (5): NotificationsPage, NotificationsPage(), getNotifications(), markAllRead(), markRead()
 
 ### Community 37 - "index.js"
 Cohesion: 0.40
 Nodes (4): app, express, path, NOTE: the page HTML is a template literal; String.raw keeps \n escapes intact
 
-### Community 38 - "Server.js"
-Cohesion: 0.06
-Nodes (45): mongoose, ffClient, getGuildInfo(), getGuildMembers(), getHealth(), getPlayerFull(), getPlayerGuild(), getPlayerProfile() (+37 more)
+### Community 38 - "itemCatalog.js"
+Cohesion: 0.14
+Nodes (27): ffClient, getGuildInfo(), getGuildMembers(), getHealth(), getPlayerFull(), getPlayerGuild(), getPlayerProfile(), getPlayerRank() (+19 more)
 
 ### Community 39 - "ff/client.js"
 Cohesion: 0.21
 Nodes (19): ApiLikeError, BASE_URL, CACHE, cacheGet(), cacheSet(), ffApiAvailable(), ffGet(), ffGetRaw() (+11 more)
 
 ### Community 114 - "MemberActionController.js"
-Cohesion: 0.13
-Nodes (17): ADMIN_ROLES, ASSIGNABLE_ROLES, assignRole(), ChangeLog, { emitPlayerProfileUpdate }, getPendingActions(), Membership, Notification (+9 more)
+Cohesion: 0.16
+Nodes (15): ADMIN_ROLES, ASSIGNABLE_ROLES, assignRole(), ChangeLog, { emitPlayerProfileUpdate }, getPendingActions(), Membership, Notification (+7 more)
 
 ### Community 115 - "Design System Master File"
 Cohesion: 0.11
@@ -309,17 +314,17 @@ Nodes (14): API Responses, Author, Contributing, Deployment, Features, FreeFire-
 Cohesion: 0.20
 Nodes (10): Fix 1: N+1 in `getMyProfile` (Backend/src/controllers/playerController.js), Fix 2: Materialized Leaderboard Score (Backend/src/models/PlayerProfile.js + Controller), Fix 3: Vite Config for Bundle Splitting (FrontEnd/vite.config.js), Fix 4: Android Release Build Optimization (FrontEnd/android/app/build.gradle), Fix 5: Tauri Release Profile (FrontEnd/src-tauri/Cargo.toml), Fix 6: Redis Integration for Caching & Rate Limiting (New File: Backend/src/config/redis.js), Fix 7: FF Item Catalog Optimization (Backend/src/services/ff/itemCatalog.js), Fix 8: Frontend Request Deduplication (FrontEnd/src/services/api/client.js) (+2 more)
 
-### Community 119 - "LeaderboardPage.jsx"
-Cohesion: 0.21
-Nodes (8): LeaderboardPage, SkeletonLeaderboard(), AvatarWithFallback(), fmt(), LeaderboardPage(), rankStyleFor(), STAT_MODES, getPlayerLeaderboard()
+### Community 119 - "notificationRoutes.js"
+Cohesion: 0.27
+Nodes (8): getNotifications(), getUnreadCount(), markRead(), Notification, express, { getNotifications, getUnreadCount, markRead }, { protect }, router
 
 ### Community 120 - "GUILD Project - Comprehensive Code Quality & Architecture Review"
 Cohesion: 0.25
 Nodes (7): 12. METRICS BASELINE (Post-Refactor Targets), 9. SECURITY REVIEW, Appendix: Recommended Tooling, Executive Summary, ✅ Good Practices, GUILD Project - Comprehensive Code Quality & Architecture Review, ⚠️ Security Gaps
 
-### Community 121 - "FFLiveData.jsx"
-Cohesion: 0.24
-Nodes (10): CombatBlock(), FFLiveData(), fmtAge(), fmtDuration(), fmtEpoch(), n(), PassGrid(), TierCard() (+2 more)
+### Community 121 - "useToast"
+Cohesion: 0.31
+Nodes (7): ToastDemoPage, useToast(), SkeletonMediaGrid(), MediaTab(), ToastDemoPage(), getPendingMedia(), moderateMedia()
 
 ### Community 122 - "3. TYPE SAFETY — CRITICAL (3/10)"
 Cohesion: 0.33
@@ -357,9 +362,9 @@ Nodes (5): 10. PRIORITIZED ACTION PLAN, 🔴 CRITICAL (Do First — Blocks Produ
 Cohesion: 0.40
 Nodes (5): 11. FILE-BY-FILE QUICK REFERENCE, Backend — Good Patterns to Preserve, Backend — Must Refactor, Frontend — Good Patterns to Preserve, Frontend — Must Refactor
 
-### Community 131 - "useAuth"
-Cohesion: 0.16
-Nodes (17): AppRoutes(), isMobileDevice(), loadGsiScript(), SocialLogin(), AuthContext, useAuth(), useLogin(), googleLogin() (+9 more)
+### Community 131 - "SocialLogin.jsx"
+Cohesion: 0.36
+Nodes (6): LoginForm(), isMobileDevice(), loadGsiScript(), SocialLogin(), googleLogin(), AuthPage()
 
 ### Community 132 - "1. ARCHITECTURE (7.5/10)"
 Cohesion: 0.40
@@ -373,9 +378,9 @@ Nodes (5): 2. CODE QUALITY (7/10), Complexity Hotspots (Cyclomatic Complexity > 
 Cohesion: 0.40
 Nodes (5): 4. TESTING — CRITICAL (1/10), Current State, Minimum Viable Test Coverage Targets, Risk Assessment, Testing Strategy (Priority Order)
 
-### Community 136 - "finalizeGoogleLogin"
-Cohesion: 0.20
-Nodes (10): createGuild(), finalizeGoogleLogin(), generateAccessToken(), generateRefreshToken(), getMe(), googleAuth(), googleCallback(), hashRefreshToken() (+2 more)
+### Community 136 - "GuildPage.jsx"
+Cohesion: 0.56
+Nodes (7): GuildPage(), applyToGuild(), disbandGuild(), getGuildProfile(), getPrivateGuildView(), leaveGuild(), updateGuild()
 
 ### Community 137 - "5. PERFORMANCE (6.5/10)"
 Cohesion: 0.50
@@ -384,6 +389,10 @@ Nodes (4): 5. PERFORMANCE (6.5/10), Database Index Audit, ⚠️ Issues, ✅ Str
 ### Community 138 - "ffTransformers.js"
 Cohesion: 0.36
 Nodes (8): buildProfileDataFromFF(), cleanNickname(), normalizeGender(), normalizeModeStats(), normalizeRankshow(), pickBlock(), stripPrefix(), toIsoDate()
+
+### Community 139 - "Membership.js"
+Cohesion: 0.29
+Nodes (7): requestOrigin(), resubmitMedia(), uploadAvatar(), uploadMedia(), persistValidatedFile(), membershipSchema, mongoose
 
 ### Community 140 - "6. MAINTAINABILITY (6/10)"
 Cohesion: 0.50
@@ -397,32 +406,40 @@ Nodes (4): 7. PATTERNS (7/10), ❌ Anti-Patterns, Design Pattern Opportunities, 
 Cohesion: 0.50
 Nodes (4): 8. ERROR HANDLING (7.5/10), Error Handling Improvements, ⚠️ Issues, ✅ Strengths
 
+### Community 143 - "GuildPlayersTab.jsx"
+Cohesion: 0.36
+Nodes (6): GAMES, GuildPlayersTab(), STATUS_FILTERS, addPlayerByGameUid(), getGuildPlayers(), searchGuildPlayer()
+
 ### Community 150 - "AssetResolutionService.js"
 Cohesion: 0.40
 Nodes (4): buildProfilePreviewObject(), { cleanNickname }, itemCatalog, resolveProfileAssets()
 
 ### Community 151 - "adminApi.js"
 Cohesion: 0.13
-Nodes (27): ActivityTab(), truncate(), GAMES, GuildPlayersTab(), STATUS_FILTERS, MembersTab(), PendingTab(), TYPE_LABEL (+19 more)
+Nodes (27): AdminPage, ActivityTab(), truncate(), MembersTab(), PendingTab(), TYPE_LABEL, TransferTab(), getMemberById() (+19 more)
+
+### Community 152 - "fileValidator.js"
+Cohesion: 0.70
+Nodes (4): detectFileType(), matches(), startsWithAscii(), validateUploadedFile()
 
 ## Knowledge Gaps
-- **498 isolated node(s):** `name`, `version`, `description`, `homepage`, `url` (+493 more)
+- **507 isolated node(s):** `name`, `version`, `description`, `homepage`, `url` (+502 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `apiFetch()` connect `apiFetch` to `useAuth`, `useToast`, `api/client.js`, `resolveMediaUrl`, `ProfilePage.jsx`, `LeaderboardPage.jsx`, `adminApi.js`, `FFLiveData.jsx`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `getMemberById()` connect `memberController.js` to `mediaRoutes.js`?**
+- **Why does `apiFetch()` connect `apiFetch` to `SocialLogin.jsx`, `App.jsx`, `NotificationsPage.jsx`, `ProfilePage.jsx`, `GuildPage.jsx`, `useAuth`, `GuildPlayersTab.jsx`, `EnterUidRegionPage.jsx`, `adminApi.js`, `useToast`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **Why does `react` connect `useAuth` to `App.jsx`, `SocialLogin.jsx`, `NotificationsPage.jsx`, `ProfilePage.jsx`, `GuildPage.jsx`, `GuildPlayersTab.jsx`, `EnterUidRegionPage.jsx`, `adminApi.js`, `useToast`, `ToastProvider.jsx`, `plugins`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `react` connect `useAuth` to `apiFetch`, `App.jsx`, `useToast`, `api/client.js`, `resolveMediaUrl`, `ProfilePage.jsx`, `LeaderboardPage.jsx`, `adminApi.js`, `FFLiveData.jsx`, `ToastProvider.jsx`, `plugins`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `plugins` connect `plugins` to `useAuth`?**
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `description` to the rest of the system?**
-  _498 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _507 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `apiFetch` be split into smaller, more focused modules?**
-  _Cohesion score 0.05839727195225917 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11363636363636363 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
 - **Should `adminRoutes.js` be split into smaller, more focused modules?**

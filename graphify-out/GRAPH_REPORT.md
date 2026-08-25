@@ -1,16 +1,16 @@
 # Graph Report - GUILD  (2026-08-25)
 
 ## Corpus Check
-- 156 files · ~327,672 words
+- 156 files · ~327,800 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1271 nodes · 2193 edges · 154 communities (144 shown, 10 thin omitted)
+- 1271 nodes · 2193 edges · 155 communities (144 shown, 11 thin omitted)
 - Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 142 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `cb06b358`
+- Built from commit: `734ead64`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -97,6 +97,7 @@
 - adminApi.js
 - fileValidator.js
 - express-rate-limit
+- Notification.js
 
 ## God Nodes (most connected - your core abstractions)
 1. `apiFetch()` - 86 edges
@@ -125,7 +126,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (154 total, 10 thin omitted)
+## Communities (155 total, 11 thin omitted)
 
 ### Community 0 - "apiFetch"
 Cohesion: 0.11
@@ -203,8 +204,8 @@ Cohesion: 0.11
 Nodes (19): BACKEND-009: Pagination Missing on `/api/guild/:guildUid` (Roster), BACKEND-010: `searchGuilds` Uses `$regex` Without Text Index, BACKEND-011: Socket.io No Redis Adapter (Single Instance Only), BACKEND-012: No Database Query Logging / Slow Query Detection, BACKEND-013: `optionalAuth` Middleware Runs 2 DB Queries for Guests, BACKEND-014: `getMemberById` Has Complex Fallback Logic (Multiple Queries), DB-003: `PlayerProfile.stats` Embedded Document Grows Unbounded, DB-004: No TTL Index on `Notification` (Unbounded Growth) (+11 more)
 
 ### Community 17 - "LeadershipController.js"
-Cohesion: 0.14
-Nodes (14): bcrypt, ChangeLog, claimLeadership(), completeTransfer(), crypto, { emitPlayerProfileUpdate }, Guild, initiateTransfer() (+6 more)
+Cohesion: 0.18
+Nodes (12): bcrypt, ChangeLog, claimLeadership(), completeTransfer(), crypto, { emitPlayerProfileUpdate }, Guild, initiateTransfer() (+4 more)
 
 ### Community 18 - "EnterUidRegionPage.jsx"
 Cohesion: 0.17
@@ -425,7 +426,7 @@ Nodes (4): detectFileType(), matches(), startsWithAscii(), validateUploadedFile(
 ## Knowledge Gaps
 - **507 isolated node(s):** `name`, `version`, `description`, `homepage`, `url` (+502 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
